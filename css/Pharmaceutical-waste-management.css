@@ -1,0 +1,71 @@
+.just{
+    text-align: justify;
+}
+.dot{
+    list-style: disc;
+    margin-right: 10px;
+}
+/* Start Variables */
+:root {
+    --main-color: #0095ff;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --main-transition: 0.3s;
+    --section-background: #ececec;
+}
+body{
+    font-family: 'Cairo', sans-serif !important;
+    
+}
+/* End Variables */
+/* start medical */
+.medical{
+    padding-top: 100px;
+}
+
+.medical .container h2{
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+.medical .container .info{
+    line-height: 1.9;
+    text-align: justify;
+    color: rgb(92, 92, 92);
+
+}
+/* end medical */
+/* start serv */
+.serv .container{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.9;
+}
+@media (max-width:991px) {
+    .serv .container{
+        flex-direction: column;
+    }
+    .serv .container .image{
+        width:100% !important;
+    }
+    .serv .container .content{
+        width:100% !important;
+    }
+}
+.serv .container .image{
+    width: calc(50% - 20px);
+}
+.serv .container .image img{
+    width: 100%;
+}
+.serv .container .content{
+    width: calc(50%);
+}
+.serv .container .content h3{
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+.serv .container .content li{
+    text-align: justify;  
+}
+/* end serv */

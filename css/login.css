@@ -1,0 +1,215 @@
+/* Start Variables */
+:root {
+    --main-color: #0095ff;
+    --transparent-color: rgba(143, 122, 15, 0.7);
+    --section-padding: 30px;
+    --main-transition: 0.3s;
+    --section-background: #ececec;
+}
+
+/* End Variables */
+/* start selection color */
+::-moz-selection {
+    /* Code for Firefox */
+    color: black;
+    background: var(--main-color);
+}
+
+::selection {
+    color: black;
+    background: var(--main-color);
+
+}
+
+/* end selection color */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #eeee;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+/* start head-page */
+.head-page {
+    height: 25vh;
+    background-image: url(../media/background\ 1.jpg);
+    position: relative;
+}
+@media (max-width:992px) {
+    .head-page .container h2{
+        font-size: 31px !important;
+        }
+    .head-page .container .text{
+        font-size:6px ;
+    }
+}
+.head-page .container h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--main-color);
+    position: absolute;
+    top: 30%;
+}
+.head-page .container .text {
+    font-size: 18px;
+    display: flex;
+    color: var(--main-color);
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    top: 60%;
+}
+.head-page .container .text a{
+    text-decoration: none;
+    color: #a2a2a2;
+    padding-left: 10px;
+    border-left: 1px black solid;
+}
+.head-page .container .text p{
+    padding-right: 10px;
+}
+/* end head-page */
+/* start form */
+.form {
+    padding-top: calc(100px + var(--section-padding) );
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+.form .top{
+    position: absolute;
+    top: -10px;
+    z-index: -99;
+}
+
+.form .down{
+    position: absolute;
+    bottom:10px;
+    z-index: -99;
+    left: 0;
+}
+
+.form .container {
+    overflow: hidden;
+    background-color: #ececec;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-y: scroll;
+}
+
+.form .container form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    .form .container form {
+        grid-template-columns: 100%;
+    }
+}
+
+.form .container::-webkit-scrollbar {
+    width: 0;
+}
+
+.form .container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .container form div label {
+    color: #484848;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.form .container form div input ,.form .container form div select ,.form .container form div select option {
+    width: 90%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    font-size: 16px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    border-bottom-width: 2px;
+}
+
+.form .container form div input[type=date] ,.form .container form div select ,.form .container form div select option {
+    width: 90%;
+    height: 45px;
+    padding-left: 65%;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.form .container form div input:focus  {
+    border-color: var(--main-color);
+}
+.form .container form div select:focus{
+    border-color: var(--main-color);
+
+}
+
+.form .container form .button {
+    width: 90%;
+    height: 40px;
+    color: var(--main-color);
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.form .container form .button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* end form */

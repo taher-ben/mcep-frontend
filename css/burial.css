@@ -1,0 +1,23 @@
+.content{
+    padding-top: 50px;
+}
+.content .container{
+
+}
+
+.content .container .image{
+    max-width: 1140px;
+}
+.content .container .image img{
+    width: 100%;
+} 
+.content .text {
+    padding-top: 30px;
+}
+.content .text .content-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content .text .content-text{
+    line-height: 1.8;
+}

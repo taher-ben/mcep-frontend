@@ -1,0 +1,191 @@
+body{
+    background-color: white;
+}
+/* start head-page */
+.head-page {
+    height: 25vh;
+    background-image: url(../media/background\ 1.jpg);
+    position: relative;
+}
+@media (max-width:992px) {
+    .head-page .container h2{
+        font-size: 15px;
+    }
+    .head-page .container .text{
+        font-size:6px ;
+    }
+}
+.head-page .container h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--main-color);
+    position: absolute;
+    top: 30%;
+}
+.head-page .container .text {
+    font-size: 18px;
+    display: flex;
+    color: var(--main-color);
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    top: 55%;
+}
+.head-page .container .text a{
+    text-decoration: none;
+    color: #a2a2a2;
+    padding-left: 10px;
+    border-left: 1px black solid;
+}
+.head-page .container .text p{
+    padding-right: 10px;
+}
+/* end head-page */
+/* strart loicton */
+.loicton{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.loicton .container{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:991px) {
+    .loicton .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loicton .container .map{
+        width: 100%;
+        margin-bottom:30px;
+
+    }
+    .loicton.container .map iframe{
+        width: 720px;
+    }
+    .loicton .container  .form{
+        width: 100%;
+
+    }
+}
+.loicton .map{
+    width: calc(50% - 20px);
+    overflow: hidden;
+}
+.loicton .map iframe{
+    width:550px;
+    height:450px;
+    border-radius: 5px;
+}
+.loicton .map .call {
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 60px;
+    padding-bottom:20px;
+    width: fit-content;
+    border-bottom: 2px solid #35abcc;
+}
+.loicton .map .phone-and-email{
+    display: flex;
+}
+
+.loicton .map .phone-and-email .text:not(:last-child){
+    margin-left: 25%;
+}
+.loicton .map .phone-and-email .text p{
+    padding-bottom: 20px;
+}
+
+
+.loicton  .form{
+    width: calc(50% - 20px);
+    border: 1px solid #dedede;
+    padding: 30px;
+}
+.loicton  .form .text h4{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.loicton  .form .text p{
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+.loicton  .form .text .icon{
+    text-align: center;
+    padding-bottom: 25px;
+
+
+}
+.loicton  .form .text .icon a i{
+    padding-bottom: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.loicton  .form .text .icon a i:hover{
+    color: var(--main-color);
+}
+.loicton  .form .main-form div{
+    display: flex;
+flex-direction: column;
+}
+.loicton  .form .main-form div label{
+    color: #4a4a4a;
+    padding-bottom: 20px;
+}
+.loicton  .form .main-form div input{
+    width: 100%;
+    padding-right:15px ;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    font-size: 16px;
+    margin-bottom:30px;
+    transition: all 0.5s ease;
+    border-bottom-width:2px;
+}
+.loicton  .form .main-form div textarea{
+    border-radius: 5px;
+    padding-right:15px ;
+    padding-top:15px ;
+    max-width: 100%;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    border-bottom-width:2px;
+
+}
+.loicton  .form .main-form div textarea:focus{
+    border-color: var(--main-color);
+
+}
+
+.loicton  .form .main-form div input:focus{
+    border-color: var(--main-color);
+}
+.loicton  .form .main-form div input[ type=date ]{
+    width: 90%;
+    height: 45px;
+    padding-left: 65%;
+    margin-bottom:30px;
+    transition: 0.5s;
+}
+.loicton  .form .main-form  button{
+    width: max-content;
+    border: 1px solid;
+    border-radius: 25px ;
+    padding: 20px 25px;
+    background-color: transparent;
+    margin-top: 10px;
+    transition: 0.3s ease-in;
+}
+.loicton  .form .main-form  button:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/* end loicton */
