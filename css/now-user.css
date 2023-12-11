@@ -114,6 +114,9 @@
     display: flex;
     flex-direction: column;
 }
+.form .container form .g-recaptcha  {
+    padding-bottom: 30px;
+}
 
 .form .container form div label {
     top:0;

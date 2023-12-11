@@ -1,6 +1,10 @@
 document.querySelector('form').addEventListener('submit', function (event) {
-
     event.preventDefault();
+    let captcharesponse = grecaptcha.getResponse();
+    console.log(captcharesponse);
+    if(captcharesponse.length <= 0){
+        throw new Error('Erorr');
+    }
     let data = {
         service: document.getElementById('service').value,
         contract_period: document.getElementById('contract_period').value,
@@ -13,11 +17,8 @@ document.querySelector('form').addEventListener('submit', function (event) {
         phone_number: document.getElementById('phone_number').value,
         commercial_register: document.getElementById('commercial_register').value,
         Commercial_license: document.getElementById('Commercial_license').value
-
     };
-
     console.log(data);
-
     // axios.post('', data)
     //   .then(function (response) {
     //     console.log(response);
@@ -25,5 +26,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
     //   .catch(function (error) {
     //     console.log(error);
     //   });
-
 });
+
+

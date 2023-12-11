@@ -26,8 +26,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-
+    <!-- captcha  -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -137,7 +137,7 @@
                 <div class="sec">
                     <div>
                         <label for="service"> نوع الخدمة المرغوبة</label>
-                        <select name="service" id="service">
+                        <select name="service" id="service" required>
                             <option value="medical">المخلفات الطبية </option>
                             <option value="Pharmacy">مخلفات صيدلانية</option>
                             <option value="pests">مكافحة الآفات </option>
@@ -145,7 +145,7 @@
                     </div>
                     <div>
                         <label for="contract_period"> فترة التعاقد </label>
-                        <select name="contract_period" id="contract_period">
+                        <select name="contract_period" id="contract_period" required>
                             <option value="year"> سنه </option>
                             <option value="two_year"> سنتين </option>
                             <option value="three_years"> ثلاثة سنين </option>
@@ -154,45 +154,50 @@
                     </div>
                     <div>
                         <label for="fullname"> أسم الجهة كاملا</label>
-                        <input type="text" id="fullname"  name="fullname" maxlength="55">
+                        <input type="text" id="fullname"  name="fullname" maxlength="55" required>
                     </div>
                     <div>
                         <label for="commercial_name"> أسم الجهة التجاري </label>
-                        <input type="text"  id="commercial_name" name="commercial_name" maxlength="55">
+                        <input type="text"  id="commercial_name" name="commercial_name" maxlength="55" required>
                     </div>
                     <div>
                         <label for="location"> عنوان الجهة </label>
-                        <input type="text"  id="location" name="location" maxlength="85">
+                        <input type="text"  id="location" name="location" maxlength="85" required>
                     </div>
                     <div>
                         <label for="email"> البريد الاكتروني </label>
-                        <input type="email"  id="email" name="email" placeholder=" example@gmail.com   ">
+                        <input type="email"  id="email" name="email" placeholder=" example@gmail.com   " required>
                     </div>
                 </div>
                 <div class="sec">
                     <div>
                         <label for="signature"> المخول بالتوقيع </label>
-                        <input type="text"  id="signature" name="signature" maxlength="35">
+                        <input type="text"  id="signature" name="signature" maxlength="35" required>
                     </div>
                     <div>
                         <label for="signature_level"> صفة المخول بالتوقيع </label>
-                        <input type="tel"  id="signature_level" name="signature_level" maxlength="25" minlength="10">
+                        <input type="tel"  id="signature_level" name="signature_level" maxlength="25" minlength="10" required>
                     </div>
                     <div>
                         <label for="phone_number"> رقم الهاتف </label>
                         <input type="tel"  id="phone_number" name="phone_number" placeholder=" 0910000000" maxlength="10"
-                            minlength="10">
+                            minlength="10" required>
                     </div>
                     <div>
                         <label for="commercial_register"> رقم السجل التجاري </label>
-                        <input type="text"  id="commercial_register" name="commercial_register" maxlength="25">
+                        <input type="text"  id="commercial_register" name="commercial_register" maxlength="25" required>
                     </div>
                     <div>
                         <label for="Commercial_license"> رقم الترخيص التجاري </label>
-                        <input type="text"  id="Commercial_license" name="Commercial_license" maxlength="25">
+                        <input type="text"  id="Commercial_license" name="Commercial_license" maxlength="25" required>
+                    </div>
+                    <div>
+                        <div class="g-recaptcha" 
+                        data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20" > 
+                        </div>
                     </div>
                 </div>
-                <a class="button btn" type="submit" >أرسال</a>
+                <button class="button btn" type="submit" >أرسال</button>
             </form>
         </div>
         <img src="../media/dots.png" class="down" alt="">
