@@ -25,22 +25,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- captcha  -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
     <!-- start header -->
-    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand image" href="../index.html"><img src="../media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" 
-                style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" 
-                data-bs-target="#main"
-                aria-controls="main" 
-                aria-expanded="false" 
+            <button class="navbar-toggler" type="button" style="color:#0095ff; border-color: #0095ff;"
+                data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -51,8 +47,7 @@
                     </li>
                     <li class="nav-item dropdown drop">
                         <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             من نحن
                         </a>
                         <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
@@ -74,31 +69,33 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" 
-                        id="navbarDropdown"
-                        role="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
+                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             خدماتنا
                         </a>
                         <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
+                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات
+                                    الـطبيـة</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
+                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات
+                                    الصيدلانية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
+                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة
+                                    الــعدوى</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
+                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة
+                                    الآفــات</a>
                             </li>
                             <li>
                                 <a class="dropdown-item pb-2" href="trining.html">إدارة الـتدريــب والـتطويــر</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و المقهـى</a>
+                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و
+                                    المقهـى</a>
                             </li>
                         </ul>
                     </li>
@@ -133,71 +130,74 @@
     <!-- start form-sum -->
     <div class="form">
         <div class="container">
-            <form >
+            <form>
                 <div class="sec">
                     <div>
                         <label for="service_id"> نوع الخدمة المرغوبة</label>
                         <select name="service_id" id="service_id" required>
-                            <option value="medical">المخلفات الطبية </option>
-                            <option value="Pharmacy">مخلفات صيدلانية</option>
-                            <option value="pests">مكافحة الآفات </option>
+                            <option value="1">المخلفات الطبية </option>
+                            <option value="2">مخلفات صيدلانية</option>
+                            <option value="3">مكافحة الآفات </option>
                         </select>
                     </div>
                     <div>
                         <label for="contract_duration_in_years"> فترة التعاقد </label>
                         <select name="contract_duration_in_years" id="contract_duration_in_years" required>
-                            <option value="year"> سنه </option>
-                            <option value="two_year"> سنتين </option>
-                            <option value="three_years"> ثلاثة سنين </option>
-                            <option value="=fiv_years"> خمسة سنين </option>
+                            <option value="1"> سنه </option>
+                            <option value="2"> سنتين </option>
+                            <option value="3"> ثلاثة سنين </option>
+                            <option value="4"> خمسة سنين </option>
                         </select>
                     </div>
                     <div>
-                        <label for="fullname"> أسم الجهة كاملا</label>
-                        <input type="text" id="fullname"  name="fullname" maxlength="55" required>
+                        <label for="company_name"> أسم الجهة كاملا</label>
+                        <input type="text" id="company_name" name="company_name" maxlength="55" required>
                     </div>
                     <div>
                         <label for="company_commercial_name"> أسم الجهة التجاري </label>
-                        <input type="text"  id="company_commercial_name" name="company_commercial_name" maxlength="55" required>
+                        <input type="text" id="company_commercial_name" name="company_commercial_name" maxlength="55"
+                            required>
                     </div>
                     <div>
                         <label for="company_address"> عنوان الجهة </label>
-                        <input type="text"  id="company_address" name="company_address" maxlength="85" required>
+                        <input type="text" id="company_address" name="company_address" maxlength="85" required>
                     </div>
                     <div>
                         <label for="email"> البريد الاكتروني </label>
-                        <input type="email"  id="email" name="email" placeholder=" example@gmail.com   " required>
+                        <input type="email" id="email" name="email" placeholder=" example@gmail.com   " required>
                     </div>
                 </div>
                 <div class="sec">
                     <div>
                         <label for="representative_name"> المخول بالتوقيع </label>
-                        <input type="text"  id="representative_name" name="representative_name" maxlength="35" required>
+                        <input type="text" id="representative_name" name="representative_name" maxlength="35" required>
                     </div>
                     <div>
                         <label for="representative_details"> صفة المخول بالتوقيع </label>
-                        <input type="tel"  id="representative_details" name="representative_details" maxlength="25" minlength="10" required>
+                        <input type="tel" id="representative_details" name="representative_details" maxlength="25"
+                            minlength="10" required>
                     </div>
                     <div>
                         <label for="phone_number"> رقم الهاتف </label>
-                        <input type="tel"  id="phone_number" name="phone_number" placeholder=" 0910000000" maxlength="10"
+                        <input type="tel" id="phone_number" name="phone_number" placeholder=" 0910000000" maxlength="13"
                             minlength="10" required>
                     </div>
                     <div>
                         <label for="commercial_registeration_number"> رقم السجل التجاري </label>
-                        <input type="text"  id="commercial_registeration_number" name="commercial_registeration_number" maxlength="25" required>
+                        <input type="text" id="commercial_registeration_number" name="commercial_registeration_number"
+                            maxlength="25" required>
                     </div>
                     <div>
                         <label for="commercial_license_number"> رقم الترخيص التجاري </label>
-                        <input type="text"  id="commercial_license_number" name="commercial_license_number" maxlength="25" required>
+                        <input type="text" id="commercial_license_number" name="commercial_license_number"
+                            maxlength="25" required>
                     </div>
-                    <div>
-                        <div class="g-recaptcha" 
-                        data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20" > 
+                        <div>
+                            <div class="g-recaptcha" data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <button class="button btn" type="submit" >أرسال</button>
+                    <button class="button btn" type="submit">أرسال</button>
             </form>
         </div>
         <img src="../media/dots.png" class="down" alt="">

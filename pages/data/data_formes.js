@@ -19,13 +19,16 @@ document.querySelector('form').addEventListener('submit', function (event) {
         company_address: document.getElementById('company_address').value
     };
     console.log(data);
-    // axios.post('', data)
-    //   .then(function (response) {
-    //     console.log(response);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
+    let headers = {
+        Accept: 'application/json',
+    };
+    axios.post('https://api.showmore.ly/contract-form', data, { headers: headers })
+    .then(response => {
+        console.log('البيانات:', response.data);
+    })
+    .catch(error => {
+        console.error('خطأ:', error);
+    });
 });
 
 

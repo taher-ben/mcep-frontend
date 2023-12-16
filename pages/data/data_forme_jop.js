@@ -7,17 +7,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
         throw new Error('Erorr');
     }
 
-    // // Validate other form fields (add more validation as needed)
-    // let requiredFields = ['full_name', 'email', 'phone_number'];
-    // for (let field of requiredFields) {
-    //     let value = document.getElementById(field).value;
-    //     if (!value.trim()) {
-    //         alert(`Please fill out the ${field.replace('_', ' ')} field.`);
-    //         return;
-    //     }
-    // }
-
-    // Prepare data for API request
+// Prepare data for API request
     let data = {
         full_name: document.getElementById('full_name').value,
         number_of_children: document.getElementById('number_of_children').value,
@@ -35,29 +25,19 @@ document.querySelector('form').addEventListener('submit', function (event) {
         was_tried: document.getElementById('was_tried').value
     };
 
-    // Make API request
+    let headers = {
+        Accept: 'application/json',
+    };
     
-    axios.post('https://api.showmore.ly/job-application', data)
-        .then(function (response) {
-            console.log(response);
-            alert('Application submitted successfully!');
-        })
-        .catch(function (error) {
-            console.error(error);
-            alert('Failed to submit application. Please try again.');
-        });
+    axios.post('https://api.showmore.ly/job-application', data, { headers: headers })
+    .then(response => {
+        console.log('البيانات:', response.data);
+    })
+    .catch(error => {
+        console.error('خطأ:', error);
+    });
 });
 
 
-let myapi = 'https://api.showmore.ly/services';
 
-// Make a GET request
-// axios.get(myapi)
-//     .then(response => {
-//         // Handle the data from the response
-//         console.log('Data:', response.data);
-//     })
-//     .catch(error => {
-//         // Handle errors
-//         console.error('Error:', error);
-//     });
+
