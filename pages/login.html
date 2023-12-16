@@ -26,6 +26,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
+    <!-- google recaptcha -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </head>
 
@@ -135,24 +138,24 @@
             <form action="">
                 <div class="sec">
                     <div>
-                        <label for="fname"> الأسم ثلاثي </label>
-                        <input type="text" id="fname" name="fname" placeholder="الأسم ثلاثي " maxlength="15">
+                        <label for="full_name"> الأسم ثلاثي </label>
+                        <input type="text" id="full_name" name="full_name" placeholder="الأسم ثلاثي " maxlength="55">
                     </div>
                     <div>
-                        <label for="lname"> اللقب</label>
-                        <input type="text" id="lname" name="lname" placeholder="الأسم الاخير ( اللقب ) " maxlength="15">
+                        <label for="last_name"> اللقب</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="الأسم الاخير ( اللقب ) " maxlength="15">
                     </div>
                     <div>
-                        <label for="birthday"> تاريخ الميلاد </label>
-                        <input type="date" id="birthday" name="birthday">
+                        <label for="date_of_birth"> تاريخ الميلاد </label>
+                        <input type="date" id="date_of_birth" name="date_of_birth">
                     </div>
                     <div>
-                        <label for="naitonalty"> الجنسية </label>
-                        <input type="text" id="naitonalty" name="naitonalty">
+                        <label for="nationality"> الجنسية </label>
+                        <input type="text" id="nationality" name="nationality">
                     </div>
                     <div>
-                        <label for="jop"> الجنس </label>
-                        <select name="cars" id="cars" form="carform">
+                        <label for="gender"> الجنس </label>
+                        <select name="cars" id="gender" form="gender">
                             <option value="male"> ذكر </option>
                             <option value="female"> أنثى </option>
                         </select>
@@ -162,8 +165,8 @@
                         <input type="email" id="email" name="email" placeholder=" example@gmail.com   ">
                     </div>
                     <div>
-                        <label for="status"> الحالة الاجتماعية </label>
-                        <select name="marital-status" id="status" form="statusform">
+                        <label for="marital_status"> الحالة الاجتماعية </label>
+                        <select name="marital_status" id="marital_status" form="marital_status">
                             <option value="Single"> أعزب </option>
                             <option value="married"> متزوج </option>
                         </select>
@@ -171,29 +174,29 @@
                 </div>
                 <div class="sec">
                     <div>
-                        <label for="childern-num"> عدد الأبناء</label>
-                        <input type="number" id="childern-num" name="childern-num" min="0" max="30">
+                        <label for="number_of_children"> عدد الأبناء</label>
+                        <input type="number" id="number_of_children" name="number_of_children" min="0" max="30">
                     </div>
                     <div>
                         <label for="address"> العنوان </label>
                         <input type="text" id="address" name="address" placeholder=" طرابلس -النوفلين   ">
                     </div>
                     <div>
-                        <label for="study"> المؤهل الدراسي </label>
-                        <input type="text" id="study" name="study" placeholder=" (  بكلوريس أو ثانوي ) " maxlength="25">
+                        <label for="education"> المؤهل الدراسي </label>
+                        <input type="text" id="education" name="education" placeholder=" (  بكلوريس أو ثانوي ) " maxlength="25">
                     </div>
                     <div>
-                        <label for="phone-number"> رقم الهاتف </label>
-                        <input type="tel" id="phone-number" name="phone-number" placeholder=" 0910000000" maxlength="10"
+                        <label for="phone_number"> رقم الهاتف </label>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder=" 0910000000" maxlength="10"
                             minlength="10">
                     </div>
                     <div>
-                        <label for="jop"> الوظيفة المتقد لها</label>
-                        <input type="text" id="jop" name="jop" maxlength="45">
+                        <label for="desired_position"> الوظيفة المتقد لها</label>
+                        <input type="text" id="desired_position" name="desired_position" maxlength="45">
                     </div>
                     <div>
-                        <label for="fname"> فترة الخبرة </label>
-                        <select name="model" id="model">
+                        <label for="experience"> فترة الخبرة </label>
+                        <select name="experience" id="experience">
                             <option value="year"> ستة أشهر</option>
                             <option value="year"> سنه </option>
                             <option value="two-year"> سنوات </option>
@@ -203,14 +206,19 @@
                         </select>
                     </div>
                     <div>
-                        <label for="status"> هل سبق وتمت محاكمتك في أي عمل جنائي؟</label>
-                        <select name="marital-status" id="status" form="statusform">
+                        <label for="was_tried"> هل سبق وتمت محاكمتك في أي عمل جنائي؟</label>
+                        <select name="was_tried" id="was_tried" form="was_tried">
                             <option value="no"> لا </option>
                             <option value="yes"> نعم </option>
                         </select>
                     </div>
+            </div>
+            <button class="button btn" type="submit">أرسال</button>
+            <div>
+                <div class="g-recaptcha" 
+                data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20" > 
                 </div>
-                <input class="button" type="submit" value="أرسال">
+            </div>    
             </form>
         </div>
         <img src="../media/dots.png" class="top" alt="">
@@ -283,6 +291,7 @@
     </div>
     <!-- end footer -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="data/data_forme_jop.js"></script>
     <!-- <script src="../js/bootstrap.bundle.min.js.map"></script>
     <script src="../js/all.min.js"></script> -->
 </body>

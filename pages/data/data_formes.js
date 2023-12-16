@@ -6,17 +6,17 @@ document.querySelector('form').addEventListener('submit', function (event) {
         throw new Error('Erorr');
     }
     let data = {
-        service: document.getElementById('service').value,
-        contract_period: document.getElementById('contract_period').value,
-        fullname: document.getElementById('fullname').value,
-        commercial_name: document.getElementById('commercial_name').value,
-        location: document.getElementById('location').value,
         email: document.getElementById('email').value,
-        signature: document.getElementById('signature').value,
-        signature_level: document.getElementById('signature_level').value,
+        service_id: document.getElementById('service_id').value,
+        representative_name: document.getElementById('representative_name').value,
+        representative_details: document.getElementById('representative_details').value,
+        contract_duration_in_years: document.getElementById('contract_duration_in_years').value,
+        company_name: document.getElementById('company_name').value,
         phone_number: document.getElementById('phone_number').value,
-        commercial_register: document.getElementById('commercial_register').value,
-        Commercial_license: document.getElementById('Commercial_license').value
+        company_commercial_name: document.getElementById('company_commercial_name').value,
+        commercial_registeration_number: document.getElementById('commercial_registeration_number').value,
+        commercial_license_number: document.getElementById('commercial_license_number').value,
+        company_address: document.getElementById('company_address').value
     };
     console.log(data);
     // axios.post('', data)

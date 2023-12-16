@@ -136,16 +136,16 @@
             <form >
                 <div class="sec">
                     <div>
-                        <label for="service"> نوع الخدمة المرغوبة</label>
-                        <select name="service" id="service" required>
+                        <label for="service_id"> نوع الخدمة المرغوبة</label>
+                        <select name="service_id" id="service_id" required>
                             <option value="medical">المخلفات الطبية </option>
                             <option value="Pharmacy">مخلفات صيدلانية</option>
                             <option value="pests">مكافحة الآفات </option>
                         </select>
                     </div>
                     <div>
-                        <label for="contract_period"> فترة التعاقد </label>
-                        <select name="contract_period" id="contract_period" required>
+                        <label for="contract_duration_in_years"> فترة التعاقد </label>
+                        <select name="contract_duration_in_years" id="contract_duration_in_years" required>
                             <option value="year"> سنه </option>
                             <option value="two_year"> سنتين </option>
                             <option value="three_years"> ثلاثة سنين </option>
@@ -157,12 +157,12 @@
                         <input type="text" id="fullname"  name="fullname" maxlength="55" required>
                     </div>
                     <div>
-                        <label for="commercial_name"> أسم الجهة التجاري </label>
-                        <input type="text"  id="commercial_name" name="commercial_name" maxlength="55" required>
+                        <label for="company_commercial_name"> أسم الجهة التجاري </label>
+                        <input type="text"  id="company_commercial_name" name="company_commercial_name" maxlength="55" required>
                     </div>
                     <div>
-                        <label for="location"> عنوان الجهة </label>
-                        <input type="text"  id="location" name="location" maxlength="85" required>
+                        <label for="company_address"> عنوان الجهة </label>
+                        <input type="text"  id="company_address" name="company_address" maxlength="85" required>
                     </div>
                     <div>
                         <label for="email"> البريد الاكتروني </label>
@@ -171,12 +171,12 @@
                 </div>
                 <div class="sec">
                     <div>
-                        <label for="signature"> المخول بالتوقيع </label>
-                        <input type="text"  id="signature" name="signature" maxlength="35" required>
+                        <label for="representative_name"> المخول بالتوقيع </label>
+                        <input type="text"  id="representative_name" name="representative_name" maxlength="35" required>
                     </div>
                     <div>
-                        <label for="signature_level"> صفة المخول بالتوقيع </label>
-                        <input type="tel"  id="signature_level" name="signature_level" maxlength="25" minlength="10" required>
+                        <label for="representative_details"> صفة المخول بالتوقيع </label>
+                        <input type="tel"  id="representative_details" name="representative_details" maxlength="25" minlength="10" required>
                     </div>
                     <div>
                         <label for="phone_number"> رقم الهاتف </label>
@@ -184,12 +184,12 @@
                             minlength="10" required>
                     </div>
                     <div>
-                        <label for="commercial_register"> رقم السجل التجاري </label>
-                        <input type="text"  id="commercial_register" name="commercial_register" maxlength="25" required>
+                        <label for="commercial_registeration_number"> رقم السجل التجاري </label>
+                        <input type="text"  id="commercial_registeration_number" name="commercial_registeration_number" maxlength="25" required>
                     </div>
                     <div>
-                        <label for="Commercial_license"> رقم الترخيص التجاري </label>
-                        <input type="text"  id="Commercial_license" name="Commercial_license" maxlength="25" required>
+                        <label for="commercial_license_number"> رقم الترخيص التجاري </label>
+                        <input type="text"  id="commercial_license_number" name="commercial_license_number" maxlength="25" required>
                     </div>
                     <div>
                         <div class="g-recaptcha" 
