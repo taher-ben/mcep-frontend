@@ -29,7 +29,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
         Accept: 'application/json',
     };
     
-    axios.post('https://api.showmore.ly/job-application', data, { headers: headers })
+    axios.post('https://api.showmore.ly/job-application', data , { headers: headers })
     .then(response => {
         console.log('البيانات:', response.data);
     })

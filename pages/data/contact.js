@@ -5,22 +5,21 @@ document.querySelector('form').addEventListener('submit', function (event) {
     if(captcharesponse.length <= 0){
         throw new Error('Erorr');
     }
-    let data = {
-        email: document.getElementById('email').value,
-        service_id: document.getElementById('service_id').value,
-        representative_name: document.getElementById('representative_name').value,
+    let data_contact = {
+        sender_fullname: document.getElementById('sender_fullname').value,
+        message: document.getElementById('message').value,
+        sender_email: document.getElementById('sender_email').value
     };
-    console.log(data);
+    console.log(data_contact);
     let headers = {
-        Accept: 'application/json',
+        Accept:'application/json',
     };
-    axios.post('https://api.showmore.ly/contact-us', data, { headers: headers })
+    axios.post('https://api.showmore.ly/contact-us', data_contact , { headers: headers })
     .then(response => {
-        console.log('البيانات:', response.data);
+        console.log('البيانات:', response.data_contact);
     })
     .catch(error => {
         console.error('خطأ:', error);
     });
 });
-
 

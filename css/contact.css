@@ -175,6 +175,9 @@ flex-direction: column;
     margin-bottom:30px;
     transition: 0.5s;
 }
+.loicton  .form .main-form .cap{
+    width: max-content;
+}
 .loicton  .form .main-form  button{
     width: max-content;
     border: 1px solid;
