@@ -162,8 +162,8 @@
 }
 
 .form .container form .button:hover {
-    background-color: var(--main-color);
-    color: white;
+    /* background-color: var(--main-color);
+    color: white; */
 }
 
 /* end form */

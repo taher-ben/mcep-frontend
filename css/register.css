@@ -1,0 +1,98 @@
+/* Start Variables */
+:root {
+    --main-color: #0095ff;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+}
+
+/* End Variables */
+/* start selection color */
+/* Code for Firefox */
+::-moz-selection {
+    color: rgb(255, 255, 255);
+    background: var(--main-color);
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: var(--main-color);
+
+}
+
+/* end selection color */
+/* Start Global Rules */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif !important;
+    background-color: #eeee;
+}
+
+/* start main-continer */
+.main-continer{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.main-continer .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+@media (max-width:767px) {
+    .main-continer  .image{
+        display: none;
+    }
+    .main-continer .login {
+        padding: 0.5rem;
+    }
+}
+.main-continer  .image{
+    max-width:270px;
+}
+.main-continer .image img{
+    width: 100%;
+}
+.main-continer .login {
+    padding: 3rem 2rem 3rem 3rem;
+}
+.main-continer .login div{
+    display: flex;
+    font-size: 15px;
+    border-bottom: 2px solid #ececec;
+    padding-bottom: 0.5em;
+    margin-bottom:2rem ;
+}
+.main-continer .login div i{
+    color: #ececec;
+    padding-right: 10px;
+}
+.main-continer .login div input{
+    border: none ;
+    outline: none;
+}
+.main-continer .login div input:foc i{
+    color: var(--main-color);
+}
+.main-continer .login button{
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.main-continer .login button:hover{
+    background-color: #0095ff;
+    color: #ececec;
+    border-color: transparent;
+}
+/* end main-continer */
