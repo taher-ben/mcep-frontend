@@ -25,24 +25,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
-    rel="stylesheet">
-        <!-- captcha  -->
+        rel="stylesheet">
+    <!-- captcha  -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- sweetalrt -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 
 </head>
 
 <body>
     <!-- start header -->
-    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand image" href="../index.html"><img src="../media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" 
-                style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" 
-                data-bs-target="#main"
-                aria-controls="main" 
-                aria-expanded="false" 
+            <button class="navbar-toggler" type="button" style="color:#0095ff; border-color: #0095ff;"
+                data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -53,8 +52,7 @@
                     </li>
                     <li class="nav-item dropdown drop">
                         <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             من نحن
                         </a>
                         <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
@@ -76,31 +74,33 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" 
-                        id="navbarDropdown"
-                        role="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
+                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             خدماتنا
                         </a>
                         <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
+                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات
+                                    الـطبيـة</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
+                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات
+                                    الصيدلانية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
+                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة
+                                    الــعدوى</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
+                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة
+                                    الآفــات</a>
                             </li>
                             <li>
                                 <a class="dropdown-item pb-2" href="trining.html">إدارة الـتدريــب والـتطويــر</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و المقهـى</a>
+                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و
+                                    المقهـى</a>
                             </li>
                         </ul>
                     </li>
@@ -162,12 +162,12 @@
                 <form>
                     <div class="main-form">
                         <div>
-                            <label for="sender_fullname"> الأسم </label>
-                            <input type="text" name="sender_fullname" id="sender_fullname" required>
+                            <label for="fullname"> الأسم </label>
+                            <input type="text" name="fullname" id="full_name" required>
                         </div>
                         <div>
-                            <label for="sender_email"> البريد الالكتروني </label>
-                            <input type="sender_email" name="sender_email" id="sender_email" required>
+                            <label for="email"> البريد الالكتروني </label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div>
                             <label for="message"> الرسالة </label>
@@ -193,7 +193,8 @@
                 <h3>شركة مرسيـليـا لـلنظافـة وحماية البيئة</h3>
                 <ul class="social">
                     <li>
-                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR" class="facebook">
+                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR"
+                            class="facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
@@ -210,7 +211,8 @@
                     </li>
                 </ul>
                 <p class="text">
-                    تعتبر شركة مرسيليا من أبرز الشركات في مجال النظافة وحماية البيئة في ليبيا. تأسست الشركة برؤية طموحة لتحقيق التميز في مجال خدمات النظافة و حماية البيئة
+                    تعتبر شركة مرسيليا من أبرز الشركات في مجال النظافة وحماية البيئة في ليبيا. تأسست الشركة برؤية طموحة
+                    لتحقيق التميز في مجال خدمات النظافة و حماية البيئة
                 </p>
             </div>
             <div class="box">

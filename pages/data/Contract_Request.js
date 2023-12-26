@@ -1,7 +1,3 @@
-//let dataContainer = document.getElementById('data-container');
-// for(let i = 1 ; i<=3;i++){
-
-// }
 let headers = {
     Accept: 'application/json',
 };
@@ -22,6 +18,9 @@ axios.get('https://api.showmore.ly/services')
     .catch(error => {
         console.error('Error fetching data:', error);
     });
+
+    let num = document.getElementById('phone_number').value;
+    console.log(typeof(num));
 
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();

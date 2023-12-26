@@ -6,9 +6,9 @@ document.querySelector('form').addEventListener('submit', function (event) {
         throw new Error('Erorr');
     }
     let data_contact = {
-        sender_fullname: document.getElementById('sender_fullname').value,
+        full_name: document.getElementById('full_name').value,
         message: document.getElementById('message').value,
-        sender_email: document.getElementById('sender_email').value
+        email: document.getElementById('email').value
     };
     console.log(data_contact);
     let headers = {
@@ -16,9 +16,20 @@ document.querySelector('form').addEventListener('submit', function (event) {
     };
     axios.post('https://api.showmore.ly/contact-us', data_contact , { headers: headers })
     .then(response => {
-        console.log('البيانات:', response.data_contact);
+        Swal.fire({
+            title: "تم الارسال",
+            icon: "success"
+        });
+        let done = "تم";
+        let editno = document.querySelector(".swal2-styled").innerText = done;
     })
     .catch(error => {
+        Swal.fire({
+            icon: "error",
+            title: "خطا في الرسال",
+        });
+        let done = "تم";
+        let editno = document.querySelector(".swal2-styled").innerText = done;
         console.error('خطأ:', error);
     });
 });

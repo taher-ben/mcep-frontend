@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> شركة مرسيـليـا لـلنظافـة وحماية البيئة </title>
-        <!-- start bootstrap -->
+    <!-- start bootstrap -->
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css.map">
@@ -29,20 +29,18 @@
     <!-- google recaptcha -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- sweetalrt -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
 <body>
     <!-- start header -->
-    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand image" href="../index.html"><img src="../media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" 
-                style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" 
-                data-bs-target="#main"
-                aria-controls="main" 
-                aria-expanded="false" 
+            <button class="navbar-toggler" type="button" style="color:#0095ff; border-color: #0095ff;"
+                data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -53,8 +51,7 @@
                     </li>
                     <li class="nav-item dropdown drop">
                         <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             من نحن
                         </a>
                         <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
@@ -76,31 +73,33 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" 
-                        id="navbarDropdown"
-                        role="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
+                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             خدماتنا
                         </a>
                         <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
+                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات
+                                    الـطبيـة</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
+                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات
+                                    الصيدلانية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
+                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة
+                                    الــعدوى</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
+                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة
+                                    الآفــات</a>
                             </li>
                             <li>
                                 <a class="dropdown-item pb-2" href="trining.html">إدارة الـتدريــب والـتطويــر</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و المقهـى</a>
+                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و
+                                    المقهـى</a>
                             </li>
                         </ul>
                     </li>
@@ -143,7 +142,8 @@
                     </div>
                     <div>
                         <label for="last_name"> اللقب</label>
-                        <input type="text" id="last_name" name="last_name" placeholder="الأسم الاخير ( اللقب ) " maxlength="15">
+                        <input type="text" id="last_name" name="last_name" placeholder="الأسم الاخير ( اللقب ) "
+                            maxlength="15">
                     </div>
                     <div>
                         <label for="date_of_birth"> تاريخ الميلاد </label>
@@ -183,12 +183,13 @@
                     </div>
                     <div>
                         <label for="education"> المؤهل الدراسي </label>
-                        <input type="text" id="education" name="education" placeholder=" (  بكلوريس أو ثانوي ) " maxlength="25">
+                        <input type="text" id="education" name="education" placeholder=" (  بكلوريس أو ثانوي ) "
+                            maxlength="25">
                     </div>
                     <div>
                         <label for="phone_number"> رقم الهاتف </label>
-                        <input type="tel" id="phone_number" name="phone_number" placeholder=" 0910000000" maxlength="10"
-                            minlength="10">
+                        <input  type="number" id="phone_number" name="phone_number" placeholder=" 0910000000"
+                            maxlength="13" minlength="10">
                     </div>
                     <div>
                         <label for="desired_position"> الوظيفة المتقد لها</label>
@@ -212,13 +213,12 @@
                             <option value="1"> نعم </option>
                         </select>
                     </div>
-            </div>
-            <button class="button btn" type="submit">أرسال</button>
-            <div>
-                <div class="g-recaptcha" 
-                data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20" > 
                 </div>
-            </div>    
+                <button class="button btn" type="submit">أرسال</button>
+                <div>
+                    <div class="g-recaptcha" data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20">
+                    </div>
+                </div>
             </form>
         </div>
         <img src="../media/dots.png" class="top" alt="">
