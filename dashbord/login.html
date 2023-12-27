@@ -17,9 +17,7 @@
     <!-- normalize file  -->
     <link rel="stylesheet" href="../css/normalize.css">
     <!-- cdn for axios -->
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -27,16 +25,16 @@
         <div class="contianer">
             <div class="row">
                 <div class="login">
-                    <form>
+                    <form id="loginForm">
                         <div>
                             <i class="fa-solid fa-user"></i>
-                            <input placeholder="Email" type="email" id="email">
+                            <input value="admin@showmore.ly" placeholder="Email" type="email" id="email">
                         </div>
                         <div>
                             <i class="fa-solid fa-lock"></i>
-                            <input placeholder="Password" type="Password" id="Password">
+                            <input value="secret" placeholder="Password" type="Password" id="Password">
                         </div>
-                        <button type="submit" onclick="login()" >Login</button> 
+                        <button type="submit">Login</button>
                     </form>
                 </div>
                 <div class="image">
@@ -45,8 +43,25 @@
             </div>
         </div>
     </div>
-    <script src="login.js">
 
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("Password").value;
+            axios.post("https://api.showmore.ly/login", { email, password })
+                .then(response => {
+                    const authToken = response.data.token;
+                    localStorage.setItem("isLoggedIn", "true");
+                    localStorage.setItem("authToken", authToken);
+                        window.location.href = "jop-form.html";
+                        window.location.href = "dashbord.html";
+                        window.location.href = "trouble.html";
+                })
+                .catch(error => {
+                    console.error("فشل تسجيل الدخول", error);
+                });
+        });
     </script>
 </body>
 
