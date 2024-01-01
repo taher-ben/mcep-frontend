@@ -1,21 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-    if (!isLoggedIn) {
-        window.location.href = "login.html";
-    } else {
+    function logout() {
         localStorage.removeItem("isLoggedIn");
     }
-});
 
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     // قم بفحص حالة تسجيل الدخول
-    //     const isLoggedIn = localStorage.getItem("isLoggedIn");
+    function clearLocalStorage() {
+        localStorage.clear();
+    }
 
-    //     if (!isLoggedIn) {
-    //         // إذا لم يكن المستخدم قد قام بتسجيل الدخول، قم بتوجيهه إلى صفحة تسجيل الدخول
-    //         localStorage.setItem("targetPage", window.location.href);
-    //         window.location.href = "login.html";
-    //     }
+    let dashbord = document.getElementById("dashbord");
+    let jop_form = document.getElementById("jop-form");
+    let trouble = document.getElementById("trouble");
+
+    dashbord.addEventListener("click", function () {
+        window.location.href = "dashbord.html";
+    });
+
+    jop_form.addEventListener("click", function () {
+        window.location.href = "jop-form.html";
+    });
+
+    trouble.addEventListener("click", function () {
+        window.location.href = "trouble.html";
+    });
+
+    // window.addEventListener('afterunload', function () {
+    //     logout();
+    //     clearLocalStorage();
     // });
 
+    if (!isLoggedIn) {
+        window.location.href = "login.html";
+    }
+
+    const logoutIcon = document.querySelector(".admin_name");
+    logoutIcon.addEventListener("click", function () {
+        logout();
+        clearLocalStorage();
+        window.location.href = "login.html";
+    });
+});

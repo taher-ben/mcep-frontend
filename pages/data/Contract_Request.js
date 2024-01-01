@@ -19,8 +19,6 @@ axios.get('https://api.showmore.ly/services')
         console.error('Error fetching data:', error);
     });
 
-    let num = document.getElementById('phone_number').value;
-    console.log(typeof(num));
 
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();

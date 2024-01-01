@@ -170,14 +170,6 @@ nav .sidebar-button i {
     margin-left: 10px;
 }
 
-.home-section nav .search-box {
-    position: relative;
-    height: 50px;
-    max-width: 550px;
-    width: 100%;
-    margin: 0 20px;
-}
-
 nav .search-box input {
     height: 100%;
     width: 100%;
@@ -207,24 +199,17 @@ nav .search-box .fa-magnifying-glass {
 
 .home-section nav .profile-details {
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     background: #F5F6FA;
     border: 2px solid #EFEEF1;
     border-radius: 6px;
-    height: 50px;
-    padding: 32px;
-    min-width: 190px; 
-    padding: 0 15px 0 2px;
+    padding: 20px;
 }
-
-nav .profile-details img {
-    height: 40px;
-    width: 40px;
-    border-radius: 6px;
-    object-fit: cover;
+.home-section nav .profile-details:hover i{
+    color: red;
 }
-
 nav .profile-details .admin_name {
     font-size: 15px;
     font-weight: 500;
@@ -234,6 +219,7 @@ nav .profile-details .admin_name {
 }
 
 nav .profile-details i {
+    cursor: pointer;
     font-size: 15px;
     color: #333;
     margin: auto;
