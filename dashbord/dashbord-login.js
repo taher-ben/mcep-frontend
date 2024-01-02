@@ -3,41 +3,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function logout() {
         localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("authToken");
     }
 
-    function clearLocalStorage() {
-        localStorage.clear();
-    }
-
-    let dashbord = document.getElementById("dashbord");
+    //start moing between pages 
     let jop_form = document.getElementById("jop-form");
     let trouble = document.getElementById("trouble");
+    let dashbord = document.getElementById("dashbord");
 
-    dashbord.addEventListener("click", function () {
-        window.location.href = "dashbord.html";
+    if (jop_form) {
+        jop_form.addEventListener("click", function () {
+            localStorage.setItem('1', 'jop-form.html');
+            localStorage.removeItem('2');
+            localStorage.removeItem('3');
+        });
+    }
+
+    if (trouble) {
+        trouble.addEventListener("click", function () {
+            localStorage.setItem('2', 'trouble.html');
+            localStorage.removeItem('1');
+            localStorage.removeItem('3');
+        });
+    }
+    if (dashbord) {
+        dashbord.addEventListener("click", function () {
+            localStorage.setItem('3', 'dashbord.html');
+            localStorage.removeItem('1');
+            localStorage.removeItem('2');
+        });
+    }
+    //end moing between pages 
+
+    window.addEventListener("beforeunload", function (event) {
+        logout();
     });
-
-    jop_form.addEventListener("click", function () {
-        window.location.href = "jop-form.html";
-    });
-
-    trouble.addEventListener("click", function () {
-        window.location.href = "trouble.html";
-    });
-
-    // window.addEventListener('afterunload', function () {
-    //     logout();
-    //     clearLocalStorage();
-    // });
 
     if (!isLoggedIn) {
-        window.location.href = "login.html";
+        window.location.assign("login.html");
     }
 
     const logoutIcon = document.querySelector(".admin_name");
-    logoutIcon.addEventListener("click", function () {
-        logout();
-        clearLocalStorage();
-        window.location.href = "login.html";
-    });
+    if (logoutIcon) {
+        logoutIcon.addEventListener("click", function () {
+            logout();
+            window.location.assign("login.html");
+        });
+    }
 });
