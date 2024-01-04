@@ -43,7 +43,6 @@ ul {
     list-style: none;
 }
 /* start */
-
 .sidebar {
     position: fixed;
     height: 100%;
@@ -51,8 +50,6 @@ ul {
     background: #0A2558;
     transition: all 0.5s ease;
 }
-
-
 
 .sidebar .logo-details {
     height: 80px;
@@ -143,9 +140,9 @@ ul {
     background: #fff;
     display: flex;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    width: calc(100% - 240px);
+    min-width: calc(100% );
     right: 240px;
     z-index: 100;
     padding: 0 20px;
@@ -359,7 +356,7 @@ nav .profile-details i {
         width: 100%;
     }
     .sidebar.active~.home-section nav {
-
+        /* position:inherit; */
         width: 100%;
     }
     .home-section nav{
@@ -373,11 +370,7 @@ nav .profile-details i {
     .home-section nav .sidebar-button .dashboard{
         display: none;
     }
-    .home-section nav .search-box{
-        display: none;
-    }
     .home-section nav .profile-details{
-        display: none;
     }
     .home-section nav .profile-details span{
         display: none;
@@ -390,4 +383,21 @@ nav .profile-details i {
         display: flex;
         flex-direction: column;
     }
+}
+/*  up     */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-color:transparent ;
+}
+#scrollToTopBtn i{
+    color: #467699;
+    background-color: #f0f7ff;
+    padding: 7px 10px;
+    border-radius: 25px;
 }

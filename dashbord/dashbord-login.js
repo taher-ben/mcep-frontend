@@ -39,6 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
         logout();
     });
 
+    if(window.addEventListener.close){
+        logout();
+    }
+
+    
     if (!isLoggedIn) {
         window.location.assign("login.html");
     }

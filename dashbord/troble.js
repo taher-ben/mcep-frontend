@@ -1,22 +1,16 @@
-// const apiToken = 'biijPgHcztd0ZUVet7GO465JZXhyDNIZWhUhIHYHdb0c2b7e';
+const apiToken = '1|biijPgHcztd0ZUVet7GO465JZXhyDNIZWhUhIHYHdb0c2b7e';
+const headers = {
+    Accept: 'application/json',
+    Authorization: `Bearer ${apiToken}`,
+    'User-Agent': 'user'
+};
 
-// const headers = {
-//     Authorization: `Bearer ${apiToken}`
-// };
+console.log(headers);
 
-// axios.get('https://api.showmore.ly/dashboard/contract-requests', { headers })
-//     .then(response => {
-//         console.log(response);
-//     })
-//     .catch(error => {
-//         console.error('Error fetching data:', error.response.data);
-//     });
-
-
-// axios.get('https://api.showmore.ly/services')
-//     .then(response => {
-//         console.log(response);
-//     })
-//     .catch(error => {
-//         console.error('Error fetching data:', error);
-//     });
+axios.get('https://showmore.ly/dashboard/messages', { headers: headers })
+    .then(response => {
+        console.log(response);
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
