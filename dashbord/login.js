@@ -5,7 +5,6 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
     if (!email || !password) {
         Swal.fire("الرجاء إدخال بريد إلكتروني وكلمة مرور صحيحين.");
-
         return;
     }
     loginUser(email, password);
@@ -21,23 +20,20 @@ function handleLoginSuccess(response) {
     const authToken = response.data.token;
     localStorage.setItem("isLoggedIn", "true");
     localStorage.setItem("authToken", authToken);
-    // take the value from the forms to change the page 
-    for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i) === '1' && localStorage.getItem('1') === 'jop-form.html') {
-            window.location.href = "jop-form.html";
-            return;
-        } else if (localStorage.key(i) === '2' && localStorage.getItem('2') === 'trouble.html') {
-            window.location.href = "trouble.html";
-            return;
-        }else if (localStorage.key(i) === '3' && localStorage.getItem('3') === 'dashbord.html') {
-            window.location.href = "dashbord.html";
+
+    // Simplify page redirection logic
+    const pages = ['jop-form.html', 'trouble.html', 'dashbord.html'];
+    for (let i = 1; i <= pages.length; i++) {
+        if (localStorage.getItem(i.toString()) === pages[i - 1]) {
+            window.location.href = pages[i - 1];
             return;
         }
     }
-    // the defult page if the page open for the first time 
+    // Default page if no match found
     window.location.href = "dashbord.html";
 }
 
 function handleLoginError(error) {
+    console.log(error);
     Swal.fire("فشل تسجيل الدخول");
 }
