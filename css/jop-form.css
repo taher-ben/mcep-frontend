@@ -356,6 +356,8 @@ nav .profile-details i {
 }
 .sales-boxes .sales-details h5{
     font-size: medium;
+    color: var(--main-color);
+
     padding-bottom: 15px;
 }
 .sales-boxes .sales-details .text div{

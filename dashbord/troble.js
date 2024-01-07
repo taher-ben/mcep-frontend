@@ -13,12 +13,55 @@ document.addEventListener('DOMContentLoaded', () => {
         // Call the protected data API endpoint
         axios.get('https://api.showmore.ly/dashboard/messages', { headers })
             .then(response => {
-                var salesContainer = document.getElementById("sales-container");
-                const dataElement = document.getElementById('data');
-                console.log(response);
-                for (let i = 0; i < response.data.data.length; i++) {
-                    let f_name = document.createElement('div');
-                    let dat = response.data.data[i].email;
+                const salesContainer = document.querySelector('.recent-sales');
+
+                for (let i = response.data.data.length - 1; i >= 0; i--) {
+                    const salesDetailsContainer = document.createElement('div');
+                    salesDetailsContainer.className = 'sales-details';
+
+                    // Add Name
+                    const nameContainer = document.createElement('div');
+                    const nameHeader = document.createElement('h5');
+                    const nameText = document.createTextNode('الأسم');
+                    const nameValue = document.createElement('div');
+                    nameValue.id = 'full_name';
+                    nameValue.innerText = response.data.data[i].full_name;
+
+                    nameHeader.appendChild(nameText);
+                    nameContainer.appendChild(nameHeader);
+                    nameContainer.appendChild(nameValue);
+
+                    // Add Email
+                    const emailContainer = document.createElement('div');
+                    const emailHeader = document.createElement('h5');
+                    const emailText = document.createTextNode('البريد الالكتروني');
+                    const emailValue = document.createElement('div');
+                    emailValue.id = 'email';
+                    emailValue.innerText = response.data.data[i].email;
+
+                    emailHeader.appendChild(emailText);
+                    emailContainer.appendChild(emailHeader);
+                    emailContainer.appendChild(emailValue);
+
+                    // Add Message
+                    const messageContainer = document.createElement('div');
+                    const messageHeader = document.createElement('h5');
+                    const messageText = document.createTextNode('الرسالة');
+                    const messageValue = document.createElement('div');
+                    messageValue.id = 'message';
+                    messageValue.innerText = response.data.data[i].message;
+
+                    messageHeader.appendChild(messageText);
+                    messageContainer.appendChild(messageHeader);
+                    messageContainer.appendChild(messageValue);
+
+                    // Add all details to sales details container
+                    salesDetailsContainer.appendChild(nameContainer);
+                    salesDetailsContainer.appendChild(emailContainer);
+                    salesDetailsContainer.appendChild(messageContainer);
+
+                    // Add sales details container to the main container
+                    salesContainer.appendChild(salesDetailsContainer);
                 }
             })
             .catch(error => {
@@ -26,59 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 });
-
-// var data = [
-//     { fullName: "معاد عمر بن طاهر", email: "example@email.com", message: "توجد مشكلة من قبل السائق" },
-//     // يمكنك إضافة مزيد من العناصر هنا
-// ];
-
-// // الحصول على عنصر العرض
-// var salesContainer = document.getElementById("sales-container");
-
-// // إنشاء العناصر الديناميكية باستخدام JavaScript
-// data.forEach(function (item) {
-//     var salesDetails = document.createElement("div");
-//     salesDetails.className = "sales-details";
-
-//     // إنشاء العنصر "الأسم"
-//     var nameDiv = createTextElement("h5", "الأسم");
-//     var fullNameDiv = createTextElement("div", item.fullName);
-//     fullNameDiv.id = "full_name";
-//     nameDiv.appendChild(fullNameDiv);
-
-//     // إنشاء العنصر "البريد الإلكتروني"
-//     var emailDiv = createTextElement("h5", "البريد الالكتروني");
-//     var emailValueDiv = createTextElement("div", item.email);
-//     emailValueDiv.id = "email";
-//     emailDiv.appendChild(emailValueDiv);
-
-//     // إنشاء العنصر "الرسالة"
-//     var messageDiv = createTextElement("h5", "الرسالة");
-//     var messageValueDiv = createTextElement("div", item.message);
-//     messageValueDiv.id = "message";
-//     messageDiv.appendChild(messageValueDiv);
-
-//     // إنشاء زر حذف
-//     var deleteDiv = document.createElement("div");
-//     deleteDiv.className = "delete";
-//     var trashIcon = document.createElement("i");
-//     trashIcon.className = "fas fa-trash-can"; // رمز القمامة من FontAwesome
-//     deleteDiv.appendChild(trashIcon);
-
-//     // إضافة العناصر إلى "salesDetails"
-//     salesDetails.appendChild(nameDiv);
-//     salesDetails.appendChild(emailDiv);
-//     salesDetails.appendChild(messageDiv);
-//     salesDetails.appendChild(deleteDiv);
-
-//     // إضافة "salesDetails" إلى "salesContainer"
-//     salesContainer.appendChild(salesDetails);
-// });
-
-// // دالة لإنشاء عنصر نصي
-// function createTextElement(tagName, text) {
-//     var element = document.createElement(tagName);
-//     var textNode = document.createTextNode(text);
-//     element.appendChild(textNode);
-//     return element;
-// }

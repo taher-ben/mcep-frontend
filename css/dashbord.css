@@ -230,9 +230,9 @@ nav .profile-details i {
 .home-content .overview-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    column-gap: 25px;
+    column-gap: 50px;
     justify-items: center;
-    row-gap: 50px;
+    row-gap: 85px;
     width: 100%;
     padding-bottom: 40px;
 }
@@ -321,9 +321,9 @@ nav .profile-details i {
 .sales-boxes .sales-details {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    column-gap: 25px;
+    column-gap: 50px;
     justify-items: center;
-    row-gap: 50px;
+    row-gap: 85px;
     width: 100%;
     padding-bottom: 40px;
     background-color: #f9f9f9;

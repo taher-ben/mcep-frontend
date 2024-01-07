@@ -12,7 +12,6 @@ axios.get('https://api.showmore.ly/services')
             let name = document.createTextNode(data[i].name);
             op.appendChild(name);
             service_id.appendChild(op);
-            
         }
     })
     .catch(error => {

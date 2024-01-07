@@ -23,8 +23,8 @@
     <!-- cdn sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="dashbord-login.js"></script>
-
-
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -65,14 +65,13 @@
                     <i class="fa-solid fa-bars"></i>
                     <span class="dashboard"> لوحة التحكم </span>
                 </div>
-                <div class="profile-details">
-                    <span class="admin_name"> تسجيل الخروج </span>
+                <div class="profile-details admin_name">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </div>
             </nav>
         </nav>
         <div class="home-content">
-            <div class="overview-boxes">
+            <!-- <div class="overview-boxes">
                 <div class="box">
                     <div class="right-side">
                         <div class="box-topic"> طلبات عمل </div>
@@ -87,140 +86,20 @@
                     </div>
                     <i class="fa-solid fa-circle-exclamation"></i>
                 </div>
-            </div>
+            </div> -->
             <div class="sales-boxes">
                 <div class="recent-sales">
                     <div class="title"> نموذج التقديم على وظيفة </div>
-                    <div class="sales-details">
-                        <div class="text">
-                            <h5> أسم ألاول </h5>
-                            <div> أحمد محسن </div>
-                        </div>
-                        <div class="text">
-                            <h5> الاسم الاخير </h5>
-                            <div> طرابلس - 20151184 </div>
-                        </div>
-                        <div class="text">
-                            <h5> تاريخ الميلاد </h5>
-                            <div> 2000/04/26 </div>
-                        </div>
-                        <div class="text">
-                            <h5> الجنسية </h5>
-                            <div> ليبي </div>
-                        </div>
-                        <div class="text">
-                            <h5> الجنس </h5>
-                            <div> ذكر </div>
-                        </div>
-                        <div class="text">
-                            <h5> البريد الالكتروني </h5>
-                            <div> example@gmail.com </div>
-                        </div>
-                        <div class="text">
-                            <h5> الحالة الاجتماعية </h5>
-                            <div> أعزب </div>
-                        </div>
-                        <div class="text">
-                            <h5> عدد الابناء </h5>
-                            <div> 2</div>
-                        </div>
-                        <div class="text">
-                            <h5> العنوان </h5>
-                            <div> طرابلس - النوفلين</div>
-                        </div>
-                        <div class="text">
-                            <h5>المؤهل الدراسي </h5>
-                            <div> شهادة ثانوية </div>
-                        </div>
-                        <div class="text">
-                            <h5> رقم الهاتف </h5>
-                            <div> 091000000 </div>
-                        </div>
-                        <div class="text">
-                            <h5> الوظية المتقد لها </h5>
-                            <div> شهادة ثانوية </div>
-                        </div>
-                        <div class="text">
-                            <h5> فترة الخبرة </h5>
-                            <div> سنه </div>
-                        </div>
-                        <div class="text">
-                            <h5> هل سبق وتم محاكمتك في أي عمل جنائي؟</h5>
-                            <div>لا</div>
-                        </div>
-                        <div class=" delete">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div>
-                    <div class="sales-details">
-                        <div class="text">
-                            <h5> أسم ألاول </h5>
-                            <div> أحمد محسن </div>
-                        </div>
-                        <div class="text">
-                            <h5> الاسم الاخير </h5>
-                            <div> طرابلس - 20151184 </div>
-                        </div>
-                        <div class="text">
-                            <h5> تاريخ الميلاد </h5>
-                            <div> 2000/04/26 </div>
-                        </div>
-                        <div class="text">
-                            <h5> الجنسية </h5>
-                            <div> ليبي </div>
-                        </div>
-                        <div class="text">
-                            <h5> الجنس </h5>
-                            <div> ذكر </div>
-                        </div>
-                        <div class="text">
-                            <h5> البريد الالكتروني </h5>
-                            <div> example@gmail.com </div>
-                        </div>
-                        <div class="text">
-                            <h5> الحالة الاجتماعية </h5>
-                            <div> أعزب </div>
-                        </div>
-                        <div class="text">
-                            <h5> عدد الابناء </h5>
-                            <div> 2</div>
-                        </div>
-                        <div class="text">
-                            <h5> العنوان </h5>
-                            <div> طرابلس - النوفلين</div>
-                        </div>
-                        <div class="text">
-                            <h5>المؤهل الدراسي </h5>
-                            <div> شهادة ثانوية </div>
-                        </div>
-                        <div class="text">
-                            <h5> رقم الهاتف </h5>
-                            <div> 091000000 </div>
-                        </div>
-                        <div class="text">
-                            <h5> الوظية المتقد لها </h5>
-                            <div> شهادة ثانوية </div>
-                        </div>
-                        <div class="text">
-                            <h5> فترة الخبرة </h5>
-                            <div> سنه </div>
-                        </div>
-                        <div class="text">
-                            <h5> هل سبق وتم محاكمتك في أي عمل جنائي؟</h5>
-                            <div>لا</div>
-                        </div>
-                        <div class=" delete">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="dashbord.js">
+    <script src="dashbord-setting.js">
 
     </script>
+    <script src="jop-form-login.js"></script>
+
 </body>
 
 </html>
