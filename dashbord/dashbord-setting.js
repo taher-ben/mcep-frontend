@@ -20,9 +20,9 @@ function scrollFunction() {
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
   ) {
-      // scrollToTopBtn.style.display = "block";
+      scrollToTopBtn.style.display = "block";
   } else {
-      // scrollToTopBtn.style.display = "none";
+      scrollToTopBtn.style.display = "none";
   }
 }
 

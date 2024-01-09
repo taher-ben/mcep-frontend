@@ -5,7 +5,7 @@ axios.get('https://api.showmore.ly/services')
     .then(response => {
         let data = response.data.data;
         let service_id = document.getElementById('service_id');
-
+console.log(data);
         for (let i = 0; i < data.length; i++) {
             let op = document.createElement('option');
             op.value = data[i].id;  
@@ -39,7 +39,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
         commercial_license_number: document.getElementById('commercial_license_number').value,
         company_address: document.getElementById('company_address').value
     };
-    console.log(data);
     let headers = {
         Accept: 'application/json',
     };

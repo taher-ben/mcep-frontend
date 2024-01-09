@@ -1,3 +1,34 @@
+let headers = {
+    Accept: 'application/json',
+};
+let ar = {
+    0:"لا يوجد",
+    1: "الاعدادي",
+    2:"الثانوية",
+    3:"معهد متوسط",
+    4:"معهد عالي",
+    5:"بكالوريوس",
+    6: "ماجستير",
+    7: "دكتوارة"
+};
+axios.get(`https://api.showmore.ly/education`)
+    .then(response => {
+        let data = response.data.data;
+        console.log(data);
+        let service_id = document.getElementById('education');
+        for (let i = 0; i < data.length; i++) {
+            let op = document.createElement('option');
+            op.value = data[i].id;  
+            let name = document.createTextNode(ar[i]);
+            op.appendChild(name);
+            service_id.appendChild(op);
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+
+
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
 

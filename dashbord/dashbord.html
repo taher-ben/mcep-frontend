@@ -20,15 +20,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
-        <!-- axios -->
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- cdn sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script src="dashbord-login.js">
+    <script src="dashbord-login.js">
 
 
-</script>
+    </script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
             <span class="logo_name"> شركة مرسيليا</span>
         </div>
         <ul class="nav-links">
-            <li >
+            <li>
                 <a href="dashbord.html" id="dashbord">
                     <i class="fa-solid fa-border-all"></i>
                     <span class="links_name"> العقود الجديدة </span>
@@ -75,16 +75,32 @@
         </nav>
         <!-- end header -->
         <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <select name="services" id="services">
+                        <option value="0">كل العقود</option>
+                        <option value="1">المخلفات الطبية</option>
+                        <option value="2">مخلفات صيدلانية</option>
+                        <option value="3">مكافحة الافات</option>
+                    </select>
+                </div>
+                <!-- <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic"> عقود جديدة </div>
+                        <div class="number">250</div>
+                    </div>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div> -->
+            </div>
             <div class="sales-boxes">
                 <div class="recent-sales">
-                    <div class="title"> إدارة النماذج و المشاكل </div>
-
+                    <div class="title "> إدارة العقود الجديدة </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- زر التمرير لأعلى -->
-    <button id="scrollToTopBtn"  onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
     <script src="dashbord-setting.js"></script>
     <script src="dashbord-data.js"></script>
 
