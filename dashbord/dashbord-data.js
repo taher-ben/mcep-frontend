@@ -27,16 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Fetch all data if the selected value is '0'
                 axios.get('https://api.showmore.ly/dashboard/contract-requests', { headers })
                     .then(response => {
+
                         allData(response); // Pass the response to the function
+                        console.log(response);
                     })
                     .catch(error => {
                         console.error('Error fetching contract requests data:', error);
                     });
             } else {
                 const jobApplicationsUrl = `https://api.showmore.ly/dashboard/contract-requests?filter[service_id]=${selectedService}`;
-                axios.get(jobApplicationsUrl, { headers })
+                axios.get(jobApplicationsUrl, { headers})
                     .then(response => {
                         allData(response); // Pass the response to the function
+                        console.log(response);
+                        
                     })
                     .catch(error => {
                         console.error('Error fetching job applications data:', error);
@@ -44,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+
 
 function allData(response) {
     const salesContainer = document.querySelector('.recent-sales');
@@ -54,19 +58,13 @@ function allData(response) {
         // console.log(response.data.data);
         const salesDetailsContainer = document.createElement('div');
         salesDetailsContainer.className = 'sales-details';
-
         // Add Company Name
-        let ar = {
-            0:"المخلفات الطبية",
-            1: "مخلفات صيدلانية",
-            2:"مكافحة الافات"
-        };
         const service_typeContainer = document.createElement('div');
         const service_typeHeader = document.createElement('h5');
         const service_typeText = document.createTextNode(' نوع الخدمة المرغوبة ');
         const service_typeValue = document.createElement('div');
         service_typeValue.id = 'company-name';
-        
+
         service_typeValue.innerText = response.data.data[i].service_type;
 
         service_typeHeader.appendChild(service_typeText);
@@ -197,3 +195,4 @@ function allData(response) {
         salesContainer.appendChild(salesDetailsContainer);
     }
 }
+});

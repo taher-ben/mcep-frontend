@@ -16,7 +16,7 @@
     <!-- WEBSITE ICON  -->
     <link rel="icon" type="image/x-icon" href="../media/Group .png">
     <!-- mian style sheet -->
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/Medical-waste-management.css">
     <!-- Awesome libriry -->
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- normalize file  -->
@@ -26,21 +26,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
         rel="stylesheet">
-    <!-- google recaptcha -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <!-- sweetalrt -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
 <body>
     <!-- start header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand image" href="../index.html"><img src="../media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false"
+            <button class="navbar-toggler" type="button" 
+                style="color:#0095ff; border-color: #0095ff;"
+                data-bs-toggle="collapse" 
+                data-bs-target="#main"
+                aria-controls="main" 
+                aria-expanded="false" 
                 aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -51,7 +50,8 @@
                     </li>
                     <li class="nav-item dropdown drop">
                         <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
                             من نحن
                         </a>
                         <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
@@ -73,33 +73,31 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" 
+                        id="navbarDropdown"
+                        role="button" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false">
                             خدماتنا
                         </a>
                         <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات
-                                    الـطبيـة</a>
+                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات
-                                    الصيدلانية</a>
+                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة
-                                    الــعدوى</a>
+                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة
-                                    الآفــات</a>
+                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
                             </li>
                             <li>
                                 <a class="dropdown-item pb-2" href="trining.html">إدارة الـتدريــب والـتطويــر</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و
-                                    المقهـى</a>
+                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النـظافـة و المقهـى</a>
                             </li>
                         </ul>
                     </li>
@@ -123,109 +121,50 @@
     <!-- start head page header -->
     <div class="head-page">
         <div class="container">
-            <h2> نموذج التقديم على وظيفة </h2>
+            <h2> إدارة المخلفات النفطية</h2>
             <div class="text">
                 <a href="../index.html"> الرئيسية </a>
-                <p> نموذج التقديم على وظيفة </p>
+                <p> إدارة المخلفات النفطية</p>
             </div>
         </div>
     </div>
     <!-- end head page header -->
-    <!-- start form -->
-    <div class="form">
+    <!-- start medical -->
+    <div class="medical">
         <div class="container">
-            <form action="">
-                <div class="sec">
-                    <div>
-                        <label for="full_name"> الأسم ثلاثي </label>
-                        <input type="text" id="full_name" name="full_name" placeholder="الأسم ثلاثي " maxlength="55">
-                    </div>
-                    <div>
-                        <label for="last_name"> اللقب</label>
-                        <input type="text" id="last_name" name="last_name" placeholder="الأسم الاخير ( اللقب ) "
-                            maxlength="15">
-                    </div>
-                    <div>
-                        <label for="date_of_birth"> تاريخ الميلاد </label>
-                        <input type="date" id="date_of_birth" name="date_of_birth">
-                    </div>
-                    <div>
-                        <label for="nationality"> الجنسية </label>
-                        <input type="text" id="nationality" name="nationality">
-                    </div>
-                    <div>
-                        <label for="gender"> الجنس </label>
-                        <select name="cars" id="gender" form="gender">
-                            <option value="male"> ذكر </option>
-                            <option value="female"> أنثى </option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="email"> البريد الاكتروني </label>
-                        <input type="email" id="email" name="email" placeholder=" example@gmail.com   ">
-                    </div>
-                    <div>
-                        <label for="marital_status"> الحالة الاجتماعية </label>
-                        <select name="marital_status" id="marital_status" form="marital_status">
-                            <option value="married"> متزوج </option>
-                            <option value="single"> أعزب </option>
-                        </select>
-                    </div>
-                </div>
-                <div class="sec">
-                    <div>
-                        <label for="number_of_children"> عدد الأبناء</label>
-                        <input type="number" id="number_of_children" name="number_of_children" min="0" max="30">
-                    </div>
-                    <div>
-                        <label for="address"> العنوان </label>
-                        <input type="text" id="address" name="address" placeholder=" طرابلس -النوفلين   ">
-                    </div>
-                    <div>
-                        <label for="education"> المؤهل الدراسي </label>
-                        <select id="education_id" name="education" required>
-                            
-                        </select>
-                    </div>
-                    <div>
-                        <label for="phone_number"> رقم الهاتف </label>
-                        <input  type="number" id="phone_number" name="phone_number" placeholder=" 0910000000"
-                            maxlength="13" minlength="10">
-                    </div>
-                    <div>
-                        <label for="desired_position"> الوظيفة المتقد لها</label>
-                        <input type="text" id="desired_position" name="desired_position" maxlength="45">
-                    </div>
-                    <div>
-                        <label for="experience"> فترة الخبرة </label>
-                        <select name="experience" id="experience">
-                            <option value="ستة أشهر"> ستة أشهر</option>
-                            <option value="سنه"> سنه </option>
-                            <option value="سنوات"> سنوات </option>
-                            <option value="ثلاث سنوات"> ثلاث سنوات</option>
-                            <option value="خمس سنوات"> خمس سنوات</option>
-                            <option value="أكثر من خمس سنوات"> أكثر من خمس سنوات</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="was_tried"> هل سبق وتمت محاكمتك في أي عمل جنائي؟</label>
-                        <select name="was_tried" id="was_tried" form="was_tried">
-                            <option value="0"> لا </option>
-                            <option value="1"> نعم </option>
-                        </select>
-                    </div>
-                </div>
-                <button class="button btn" type="submit">أرسال</button>
-                <div>
-                    <div class="g-recaptcha" data-sitekey="6LegjS0pAAAAALlNh_vYbRxmxfNugoIEQ4z1iU20">
-                    </div>
-                </div>
-            </form>
+            <h2> إدارة المخلفات النفطية</h2>
+            <div class="info">
+                <p>
+                </p>
+
+            </div>
         </div>
-        <img src="../media/dots.png" class="top" alt="">
-        <img src="../media/dots.png" class="down" alt="">
     </div>
-    <!-- end form -->
+    <!-- end medical -->
+    <!-- start serv -->
+    <div class="serv">
+        <div class="container">
+            <div class="image">
+                <img src="../media/management/Medical.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>    </h3>
+                <ul>
+                    <li class="just">
+                    </li>
+                    <li class="just">
+                    </li>
+                    <li class="just">
+                    </li>
+                    <li class="just">
+                    </li>
+                    <li class="just">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end serv -->
     <!-- start footer -->
     <div class="footer">
         <div class="container">
@@ -245,7 +184,6 @@
                     </li>
                     <li>
                         <a href="#" class="twitter">
-
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
@@ -292,7 +230,6 @@
     </div>
     <!-- end footer -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="data/jop_application.js"></script>
     <!-- <script src="../js/bootstrap.bundle.min.js.map"></script>
     <script src="../js/all.min.js"></script> -->
 </body>

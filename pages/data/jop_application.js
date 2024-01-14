@@ -14,14 +14,13 @@ let ar = {
 axios.get(`https://api.showmore.ly/education`)
     .then(response => {
         let data = response.data.data;
-        console.log(data);
-        let service_id = document.getElementById('education');
+        let education_id = document.getElementById('education_id');
         for (let i = 0; i < data.length; i++) {
             let op = document.createElement('option');
             op.value = data[i].id;  
             let name = document.createTextNode(ar[i]);
             op.appendChild(name);
-            service_id.appendChild(op);
+            education_id.appendChild(op);
         }
     })
     .catch(error => {
@@ -64,7 +63,7 @@ console.log(typeof(num));
         last_name: document.getElementById('last_name').value,
         address: document.getElementById('address').value,
         date_of_birth: document.getElementById('date_of_birth').value,
-        education: document.getElementById('education').value,
+        education_id: document.getElementById('education_id').value,
         nationality: document.getElementById('nationality').value,
         phone_number: document.getElementById('phone_number').value,
         gender: document.getElementById('gender').value,
@@ -74,6 +73,7 @@ console.log(typeof(num));
         marital_status: document.getElementById('marital_status').value,
         was_tried: document.getElementById('was_tried').value
     };
+    console.log(data);
 
     let headers = {
         Accept: 'application/json',
