@@ -367,7 +367,7 @@ header .container .form i {
     font-weight: bold;
     transition: 0.3s;
 }
-.work-steps .image .circles button i:hover{
+.work-steps .image .circles button i:hover {
     color: var(--main-color);
 }
 @media (max-width: 991px) {
