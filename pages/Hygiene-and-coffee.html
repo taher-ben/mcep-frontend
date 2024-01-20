@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- normalize file  -->
     <link rel="stylesheet" href="../css/normalize.css">
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- google font cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,98 +33,7 @@
 
 <body>
     <!-- start header -->
-    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand image" href="../index.html"><img src="../media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" 
-                style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" 
-                data-bs-target="#main"
-                aria-controls="main" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="main">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " aria-current="page" href="../index.html"> الرئيسية</a>
-                    </li>
-                    <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false">
-                            من نحن
-                        </a>
-                        <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a dir="rtl" class="dropdown-item" href="word.html"> كلمة مدير عام الشركة </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="visian.html"> رؤيـتـنــا </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="message.html"> رسالتـنـا </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="goals.html"> أهـدافنا </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="rate-us.html"> قـيـمنــا </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" 
-                        id="navbarDropdown"
-                        role="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                            خدماتنا
-                        </a>
-                        <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">  
-                            <li>
-                                <a class="dropdown-item pb-2" href="Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="#">إدارة المخلفات النـفـطـية</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="#">إدارة الـدراسـات الـبـيـئـية</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="trining.html">إدارة الـتدريــب والـتطويــر</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item pb-2" href="Hygiene-and-coffee.html">إدارة النظافة العامة والضيافة</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="news.html">أخبار ونشاطات </a>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="Contract-Request.html">تعاقد معنا </a>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="jop-application.html">وظائف</a>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="contact.html">أتصل بنا </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="headerContainer"></div>
     <!-- end header -->
     <!-- start head page header -->
     <div class="head-page">
@@ -141,10 +52,15 @@
             <h2> إدارة النظافـة و المقهى</h2>
             <div class="info">
                 <p class="just">
-                    تُعَد إدارة النظافة والمقهى أحد الجوانب الحيوية التي تُولى شركة مرسيليا للنظافة وحماية البيئة اهتمامًا بالغًا بها. نحن نعمل على توفير خدمات متميزة ومتكاملة في مجال إدارة النظافة للمكاتب والشركات، إلى جانب خدمات المقهى والسفرجة، بهدف تلبية احتياجات عملائنا بمستويات عالية من النظافة والجودة. 
+                    تُعَد إدارة النظافة والمقهى أحد الجوانب الحيوية التي تُولى شركة مرسيليا للنظافة وحماية البيئة
+                    اهتمامًا بالغًا بها. نحن نعمل على توفير خدمات متميزة ومتكاملة في مجال إدارة النظافة للمكاتب
+                    والشركات، إلى جانب خدمات المقهى والسفرجة، بهدف تلبية احتياجات عملائنا بمستويات عالية من النظافة
+                    والجودة.
                 </p>
                 <p class="just">
-                    تمتاز ادارة النظافة و المقهى في شركة مرسيليا للنظافة و حماية البيئة بفرق مدربة ومؤهلة لتقديم الخدمات الفعّالة في إدارة النظافة للمكاتب والشركات. نحرص على تنفيذ مهامنا بأعلى معايير الاحترافية والتزامًا بالتقنيات الأمنة والموصى بها من منظمة الصحة العالمية والمنظمات البيئية الدولية
+                    تمتاز ادارة النظافة و المقهى في شركة مرسيليا للنظافة و حماية البيئة بفرق مدربة ومؤهلة لتقديم الخدمات
+                    الفعّالة في إدارة النظافة للمكاتب والشركات. نحرص على تنفيذ مهامنا بأعلى معايير الاحترافية والتزامًا
+                    بالتقنيات الأمنة والموصى بها من منظمة الصحة العالمية والمنظمات البيئية الدولية
                 </p>
             </div>
         </div>
@@ -160,7 +76,8 @@
                 <h3> خدماتنا </h3>
                 <ul>
                     <li class="just dot">
-                        إعداد المشروبات الساخنة والباردة: نقوم بتحضير مجموعة متنوعة من المشروبات الساخنة والباردة بمهارة عالية وفقًا لتفضيلات الزبائن.
+                        إعداد المشروبات الساخنة والباردة: نقوم بتحضير مجموعة متنوعة من المشروبات الساخنة والباردة بمهارة
+                        عالية وفقًا لتفضيلات الزبائن.
                     </li>
                     <li class="just dot">
                         تقديم الوجبات الخفيفة: نقدم تشكيلة متنوعة من الوجبات الخفيفة الشهية التي تُلبي جميع الأذواق.
@@ -169,7 +86,9 @@
                         تقديم خدمات السفرجة: نقدم خدمات السفرجة بأعلى مستويات الرقي والاحترافية للضيوف والزوار.
                     </li>
                     <li class="just dot">
-                        توفير الأواني والأدوات: نقوم بتوفير جميع الأواني والأدوات الضرورية لتقديم المشروبات والوجبات، بدءًا من أطقم الشاي والقهوة وصولاً إلى الأطباق والأكواب والأواني المختلفة، مما يضمن تجربة طعام مريحة وممتعة.
+                        توفير الأواني والأدوات: نقوم بتوفير جميع الأواني والأدوات الضرورية لتقديم المشروبات والوجبات،
+                        بدءًا من أطقم الشاي والقهوة وصولاً إلى الأطباق والأكواب والأواني المختلفة، مما يضمن تجربة طعام
+                        مريحة وممتعة.
                     </li>
                 </ul>
             </div>
@@ -178,22 +97,25 @@
     <div class="serv">
         <div class="container">
             <div class="image">
-                <ul >
+                <ul>
                     <li class="just dot">
-                        توفير المعدات: نحرص على تزويدك بأحدث المعدات والأجهزة اللازمة لتحضير وتقديم المشروبات الساخنة والباردة، مثل ماكينات القهوة وآلات الشاي والحليب وغيرها، لضمان أفضل جودة وطعم للمشروبات.
+                        توفير المعدات: نحرص على تزويدك بأحدث المعدات والأجهزة اللازمة لتحضير وتقديم المشروبات الساخنة
+                        والباردة، مثل ماكينات القهوة وآلات الشاي والحليب وغيرها، لضمان أفضل جودة وطعم للمشروبات.
                     </li>
                     <li class="just dot">
                         تنظيف وتعقيم المطابخ: نحرص على تنظيف وتعقيم المطابخ والمعدات الغذائية بدقة لضمان السلامة الصحية.
                     </li>
                     <li class="just dot">
-                        تنظيف الأرضيات والسجاد: نقدم خدمات التنظيف والغسيل الشاملة للأرضيات والسجاد باستخدام أحدث التقنيات والمعدات لضمان الحصول على نتائج مثالية.
+                        تنظيف الأرضيات والسجاد: نقدم خدمات التنظيف والغسيل الشاملة للأرضيات والسجاد باستخدام أحدث
+                        التقنيات والمعدات لضمان الحصول على نتائج مثالية.
                     </li>
                 </ul>
             </div>
             <div class="content">
                 <ul>
                     <li class="just dot">
-                        تنظيف الزجاج والنوافذ: نقوم بتنظيف وتلميع الزجاج والنوافذ بكفاءة عالية لتحقيق إطلالة نظيفة وجذابة.
+                        تنظيف الزجاج والنوافذ: نقوم بتنظيف وتلميع الزجاج والنوافذ بكفاءة عالية لتحقيق إطلالة نظيفة
+                        وجذابة.
                     </li>
                     <li class="just dot">
                         تنظيف دورات المياه: نهتم بتنظيف وتعقيم دورات المياه بشكل دوري وشامل للحفاظ على نظافتها وصحتها.
@@ -202,7 +124,8 @@
                         إدارة النفايات: نقوم بجمع وإزالة النفايات بصورة منظمة وصحيحة، وفقًا لأفضل الممارسات البيئية.
                     </li>
                     <li class="just dot">
-                        تنظيف المكاتب والمساحات العامة: يتم تنظيف جميع المكاتب والمناطق العامة بعناية فائقة لتوفير بيئة نظيفة ومرتبة تُحَسِّن من آداء العاملين والزائرين.
+                        تنظيف المكاتب والمساحات العامة: يتم تنظيف جميع المكاتب والمناطق العامة بعناية فائقة لتوفير بيئة
+                        نظيفة ومرتبة تُحَسِّن من آداء العاملين والزائرين.
                     </li>
                 </ul>
             </div>
@@ -216,7 +139,8 @@
                 <h3>شركة مرسيـليـا لـلنظافـة وحماية البيئة</h3>
                 <ul class="social">
                     <li>
-                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR" class="facebook">
+                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR"
+                            class="facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
@@ -233,7 +157,8 @@
                     </li>
                 </ul>
                 <p class="text">
-                    تعتبر شركة مرسيليا من أبرز الشركات في مجال النظافة وحماية البيئة في ليبيا. تأسست الشركة برؤية طموحة لتحقيق التميز في مجال خدمات النظافة و حماية البيئة
+                    تعتبر شركة مرسيليا من أبرز الشركات في مجال النظافة وحماية البيئة في ليبيا. تأسست الشركة برؤية طموحة
+                    لتحقيق التميز في مجال خدمات النظافة و حماية البيئة
                 </p>
             </div>
             <div class="box">
@@ -273,8 +198,10 @@
     </div>
     <!-- end footer -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/HFFP.js"></script>
+
     <!-- <script src="../js/bootstrap.bundle.min.js.map"></script>
-    <script src="../js/all.min.js"></script> -->
+    -->
 </body>
 
 </html>

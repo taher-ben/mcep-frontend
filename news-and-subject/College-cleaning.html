@@ -21,7 +21,9 @@
     <!-- Awesome libriry -->
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- normalize file  -->
-    <link rel="stylesheet" href="../css/normalize.css">
+         <link rel="stylesheet" href="../css/normalize.css">
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- google font cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,99 +34,8 @@
 
 <body>
     <!-- start header -->
-    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand image" href="../index.html"><img src="../media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" 
-                style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" 
-                data-bs-target="#main"
-                aria-controls="main" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="main">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " aria-current="page" href="../index.html"> الرئيسية</a>
-                    </li>
-                    <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false">
-                            من نحن
-                        </a>
-                        <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a dir="rtl" class="dropdown-item" href="../pages/word.html"> كلمة مدير عام الشركة </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/visian.html"> رؤيـتـنــا </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/message.html"> رسالتـنـا </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/goals.html"> أهـدافنا </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="../pages/rate-us.html"> قـيـمنــا </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle    p-2 p-lg-3" href="#" 
-                        id="navbarDropdown"
-                        role="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
-                            خدماتنا
-                        </a>
-                    </a>
-                    <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">  
-                        <li>
-                            <a class="dropdown-item pb-2" href="../pages/Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="../pages/Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="../pages/Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="../pages/Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="#">إدارة المخلفات النـفـطـية</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="#">إدارة الـدراسـات الـبـيـئـية</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="../pages/trining.html">إدارة الـتدريــب والـتطويــر</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item pb-2" href="../pages/Hygiene-and-coffee.html">إدارة النظافة العامة والضيافة</a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="../pages/news.html">أخبار ونشاطات </a>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="../pages/Contract-Request.html">تعاقد معنا </a>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="../pages/jop-application.html">وظائف</a>
-                    </li>
-                    <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="../pages/contact.html">أتصل بنا </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="headerContainer"></div>
+
     <!-- end header -->
     <!-- start head page header -->
     <div class="head-page">
@@ -168,74 +79,11 @@
     </div>
     <!-- end content -->
     <!-- start footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="box">
-                <h3>شركة مرسيـليـا لـلنظافـة وحماية البيئة</h3>
-                <ul class="social">
-                    <li>
-                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR" class="facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                                                <a href="#" class="twitter">
-
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p class="text">
-                    شركة مارسيليا للنظافة وحماية البيئة إحدى شركات مجموعة مارسيليا والتي تعتبر من أبرز الشركات الوطنية
-                    العاملة في مجال النظافة وحماية البيئة
-                </p>
-            </div>
-            <div class="box">
-                <ul class="links">
-                    <li><a href="../pages/Contract-Request.html"> تعاقد معنا </a></li>
-                    <li><a href="../pages/jop-application.html">وظائف</a></li>
-                    <li><a href="../pages/about.html">من نحن</a></li>
-                    <li><a href="../pages/news.html">أخبار ونشاطات</a></li>
-                    <li><a href="../pages/contact.html"> أتصل بنا </a></li>
-                </ul>
-            </div>
-            <div class="box">
-                <div class="line">
-                    <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <div class="info"> حي الأندلس , طرابس , ليبيا </div>
-                </div>
-                <div class="line">
-                    <i class="far fa-clock fa-fw"></i>
-                    <div class="info">ساعات العمل من الساعة 8 صباحا الي 4 مساءً </div>
-                </div>
-                <div class="line">
-                    <i class="fas fa-phone-volume fa-fw"></i>
-                    <div class="info">
-                        <span dir="ltr">+218-91-7661212</span>
-                        <span dir="ltr">+218-91-7881212</span>
-                    </div>
-                </div>
-            </div>
-            <div class="box footer-gallery">
-                <img decoding="async" src="../media/management/1.jpg" alt="" />
-                <img decoding="async" src="../media/management/2.jpg" alt="" />
-                <img decoding="async" src="../media/management/3.jpg" alt="" />
-                <img decoding="async" src="../media/management/4.jpg" alt="" />
-                <!-- <img decoding="async" src="../media/management/5.jpg" alt="" />
-                <img decoding="async" src="../media/management/6.jpg" alt="" /> -->
-            </div>
-        </div>
-        <p class="copyright"> &copy; جميع الحقوق محفوظة 2023. شركة مرسيـليـا لـلنظافـة وحماية البيئة ذ م م. </p>
-    </div>
+    <div id="footercontaienr"></div>
     <!-- end footer -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="../js/bootstrap.bundle.min.js.map"></script>
-    <script src="../js/all.min.js"></script> -->
+    <script src="../js/HFFS.js"></script>
+    <!-- <script src="../js/bootstrap.bundle.min.js.map"></script>-->
 </body>
 
 </html>
