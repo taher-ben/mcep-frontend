@@ -5,10 +5,10 @@ axios.get('https://api.showmore.ly/services')
     .then(response => {
         let data = response.data.data;
         let service_id = document.getElementById('service_id');
-console.log(data);
+        console.log(data);
         for (let i = 0; i < data.length; i++) {
             let op = document.createElement('option');
-            op.value = data[i].id;  
+            op.value = data[i].id;
             let name = document.createTextNode(data[i].name);
             op.appendChild(name);
             service_id.appendChild(op);
@@ -52,6 +52,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
             let editno = document.querySelector(".swal2-styled").innerText = done;
         })
         .catch(error => {
+            console.log(error);
             Swal.fire({
                 icon: "error",
                 title: "خطا في الرسال",
