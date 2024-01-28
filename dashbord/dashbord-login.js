@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.removeItem("isLoggedIn");
         localStorage.removeItem("authToken");
     }
-
-    //start moing between pages 
     let jop_form = document.getElementById("jop-form");
     let trouble = document.getElementById("trouble");
     let dashbord = document.getElementById("dashbord");
@@ -16,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem('1', 'jop-form.html');
             localStorage.removeItem('2');
             localStorage.removeItem('3');
+            window.addEventListener("beforeunload", function (event) {
+                logout();
+            });
         });
     }
 
@@ -24,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem('2', 'trouble.html');
             localStorage.removeItem('1');
             localStorage.removeItem('3');
+            window.addEventListener("beforeunload", function (event) {
+                logout();
+            });
         });
     }
     if (dashbord) {
@@ -31,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem('3', 'dashbord.html');
             localStorage.removeItem('1');
             localStorage.removeItem('2');
+            window.addEventListener("beforeunload", function (event) {
+                logout();
+            });
         });
     }
     //end moing between pages 

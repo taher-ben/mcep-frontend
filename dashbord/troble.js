@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('authToken');
     const isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         axios.get('https://api.showmore.ly/dashboard/messages', { headers })
             .then(response => {
                 const salesContainer = document.querySelector('.recent-sales');
-
                 for (let i = response.data.data.length - 1; i >= 0; i--) {
                     const salesDetailsContainer = document.createElement('div');
                     salesDetailsContainer.className = 'sales-details';
@@ -69,3 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 });
+
+window.addEventListener('beforeunload', () => {
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('isLoggedIn');
+});
+
+
