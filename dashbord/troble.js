@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         axios.get('https://api.showmore.ly/dashboard/messages', { headers })
             .then(response => {
                 const salesContainer = document.querySelector('.recent-sales');
-                for (let i = response.data.data.length - 1; i >= 0; i--) {
+                for (let i =0; i <= response.data.data.length; i++) {
                     const salesDetailsContainer = document.createElement('div');
                     salesDetailsContainer.className = 'sales-details';
 

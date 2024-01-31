@@ -43,10 +43,11 @@
     <!-- start head page header -->
     <div class="head-page">
         <div class="container">
-            <h2> نموذج التقديم على وظيفة </h2>
+            <h2 data-lang="jop_head_h2"> نموذج التقديم على وظيفة </h2>
             <div class="text">
-                <a href="../index.html"> الرئيسية </a>
-                <p> نموذج التقديم على وظيفة </p>
+                <a href="../index.html" data-lang="jop_head_a"> الرئيسية </a>
+                <span class="dvider"></span>
+                <p data-lang="jop_head_p"> نموذج التقديم على وظيفة </p>
             </div>
         </div>
     </div>
@@ -57,84 +58,84 @@
             <form action="">
                 <div class="sec">
                     <div>
-                        <label for="full_name"> الأسم ثلاثي </label>
+                        <label for="full_name" data-lang="jop_1"> الأسم ثلاثي </label>
                         <input type="text" id="full_name" name="full_name" placeholder="الأسم ثلاثي " maxlength="55">
                     </div>
                     <div>
-                        <label for="last_name"> اللقب</label>
+                        <label for="last_name" data-lang="jop_2"> اللقب</label>
                         <input type="text" id="last_name" name="last_name" placeholder="الأسم الاخير ( اللقب ) "
                             maxlength="15">
                     </div>
                     <div>
-                        <label for="date_of_birth"> تاريخ الميلاد </label>
+                        <label for="date_of_birth" data-lang="jop_3"> تاريخ الميلاد </label>
                         <input type="date" id="date_of_birth" name="date_of_birth">
                     </div>
                     <div>
-                        <label for="nationality"> الجنسية </label>
+                        <label for="nationality" data-lang="jop_4"> الجنسية </label>
                         <input type="text" id="nationality" name="nationality">
                     </div>
                     <div>
-                        <label for="gender"> الجنس </label>
+                        <label for="gender" data-lang="jop_5"> الجنس </label>
                         <select name="cars" id="gender" form="gender">
-                            <option value="male"> ذكر </option>
-                            <option value="female"> أنثى </option>
+                            <option value="male" data-lang="jop_6"> ذكر </option>
+                            <option value="female" data-lang="jop_7"> أنثى </option>
                         </select>
                     </div>
                     <div>
-                        <label for="email"> البريد الاكتروني </label>
+                        <label for="email" data-lang="jop_8"> البريد الاكتروني </label>
                         <input type="email" id="email" name="email" placeholder=" example@gmail.com   ">
                     </div>
                     <div>
-                        <label for="marital_status"> الحالة الاجتماعية </label>
+                        <label for="marital_status" data-lang="jop_9"> الحالة الاجتماعية </label>
                         <select name="marital_status" id="marital_status" form="marital_status">
-                            <option value="married"> متزوج </option>
-                            <option value="single"> أعزب </option>
+                            <option value="married" data-lang="jop_10"> متزوج </option>
+                            <option value="single" data-lang="jop_11"> أعزب </option>
                         </select>
                     </div>
                 </div>
                 <div class="sec">
                     <div>
-                        <label for="number_of_children"> عدد الأبناء</label>
+                        <label for="number_of_children" data-lang="jop_12"> عدد الأبناء</label>
                         <input type="number" id="number_of_children" name="number_of_children" min="0" max="30">
                     </div>
                     <div>
-                        <label for="address"> العنوان </label>
+                        <label for="address" data-lang="jop_12"> العنوان </label>
                         <input type="text" id="address" name="address" placeholder=" طرابلس -النوفلين   ">
                     </div>
                     <div>
-                        <label for="education"> المؤهل الدراسي </label>
+                        <label for="education" data-lang="jop_13"> المؤهل الدراسي </label>
                         <select id="education_id" name="education" required>
 
                         </select>
                     </div>
                     <div>
-                        <label for="phone_number"> رقم الهاتف </label>
+                        <label for="phone_number" data-lang="jop_14"> رقم الهاتف </label>
                         <input type="number" id="phone_number" name="phone_number" placeholder=" 0910000000"
                             maxlength="13" minlength="10">
                     </div>
                     <div>
-                        <label for="desired_position"> الوظيفة المتقد لها</label>
+                        <label for="desired_position" data-lang="jop_15"> الوظيفة المتقد لها</label>
                         <input type="text" id="desired_position" name="desired_position" maxlength="45">
                     </div>
                     <div>
-                        <label for="experience"> فترة الخبرة </label>
+                        <label for="experience" data-lang="jop_16"> فترة الخبرة </label>
                         <select name="experience" id="experience">
-                            <option value="ستة أشهر"> ستة أشهر</option>
-                            <option value="سنه"> سنه </option>
-                            <option value="ثلاث سنوات"> ثلاث سنوات</option>
-                            <option value="خمس سنوات"> خمس سنوات</option>
-                            <option value="أكثر من خمس سنوات"> أكثر من خمس سنوات</option>
+                            <option value="ستة أشهر" data-lang="jop_17"> ستة أشهر</option>
+                            <option value="سنه" data-lang="jop_18"> سنه </option>
+                            <option value="ثلاث سنوات" data-lang="jop_18"> ثلاث سنوات</option>
+                            <option value="خمس سنوات" data-lang="jop_19"> خمس سنوات</option>
+                            <option value="أكثر من خمس سنوات" data-lang="jop_20"> أكثر من خمس سنوات</option>
                         </select>
                     </div>
                     <div>
-                        <label for="was_tried"> هل سبق وتمت محاكمتك في أي عمل جنائي؟</label>
+                        <label for="was_tried" data-lang="jop_21"> هل سبق وتمت محاكمتك في أي عمل جنائي؟</label>
                         <select name="was_tried" id="was_tried" form="was_tried">
-                            <option value="0"> لا </option>
-                            <option value="1"> نعم </option>
+                            <option value="0" data-lang="jop_22"> لا </option>
+                            <option value="1" data-lang="jop_23"> نعم </option>
                         </select>
                     </div>
                 </div>
-                <button class="button btn" type="submit">أرسال</button>
+                <button class="button btn" type="submit" data-lang="jop_23">أرسال</button>
                 <div>
                     <div class="g-recaptcha" data-sitekey="6LenAFcpAAAAAOIPpyFV5rzG75nixtRNv3xdZKM9">
                     </div>

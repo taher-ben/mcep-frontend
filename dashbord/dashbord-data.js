@@ -54,7 +54,7 @@ function allData(response) {
     const salesContainer = document.querySelector('.recent-sales');
     salesContainer.innerHTML = ''; // Clear previous elements
 
-    for (let i = response.data.data.length - 1; i >= 0; i--) {
+    for (let i = 0; i <= response.data.data.length; i++) {
         // console.log(response.data.data);
         const salesDetailsContainer = document.createElement('div');
         salesDetailsContainer.className = 'sales-details';
@@ -196,3 +196,21 @@ function allData(response) {
     }
 }
 });
+
+// strat services
+// axios.get('https://api.showmore.ly/services')
+//     .then(response => {
+//         let data = response.data.data;
+//         let service_id = document.getElementById('services');
+//         console.log(data);
+//         for (let i = 0; i < data.length; i++) {
+//             let op = document.createElement('option');
+//             op.value = data[i].id;
+//             let name = document.createTextNode(data[i].name);
+//             op.appendChild(name);
+//             service_id.appendChild(op);
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Error fetching data:', error);
+//     });

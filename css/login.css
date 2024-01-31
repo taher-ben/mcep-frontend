@@ -73,47 +73,6 @@ ul {
 }
 
 /* End Global Rules */
-
-/* start head-page */
-.head-page {
-    height: 25vh;
-    background-image: url(../media/background\ 1.jpg);
-    position: relative;
-}
-@media (max-width:992px) {
-    .head-page .container h2{
-        font-size: 31px !important;
-        }
-    .head-page .container .text{
-        font-size:6px ;
-    }
-}
-.head-page .container h2 {
-    font-size: 40px;
-    font-weight: bolder;
-    color: var(--main-color);
-    position: absolute;
-    top: 30%;
-}
-.head-page .container .text {
-    font-size: 18px;
-    display: flex;
-    color: var(--main-color);
-    position: absolute;
-    text-decoration: none;
-    color: #000;
-    top: 60%;
-}
-.head-page .container .text a{
-    text-decoration: none;
-    color: #a2a2a2;
-    padding-left: 10px;
-    border-left: 1px black solid;
-}
-.head-page .container .text p{
-    padding-right: 10px;
-}
-/* end head-page */
 /* start form */
 .form {
     padding-top: calc(100px + var(--section-padding) );

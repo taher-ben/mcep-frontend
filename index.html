@@ -30,93 +30,95 @@
 
 <body>
     <!-- start header -->
-    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand image" href="index.html"><img src="media/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" 
-                style="color:#0095ff; border-color: #0095ff;"
-                data-bs-toggle="collapse" 
-                data-bs-target="#main"
-                aria-controls="main" 
-                aria-expanded="false" 
+            <button class="navbar-toggler" type="button" style="color:#0095ff; border-color: #0095ff;"
+                data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="main">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 " aria-current="page" href="index.html"> الرئيسية</a>
+                        <a class="nav-link p-2 p-lg-3 " aria-current="page" href="index.html" data-lang="home">
+                            الرئيسية</a>
                     </li>
                     <li class="nav-item dropdown drop">
                         <a class="nav-link dropdown-toggle   p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" 
-                            aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" data-lang="about">
                             من نحن
                         </a>
                         <ul class="dropdown-menu down   p-2 p-lg-3" aria-labelledby="navbarDropdown">
                             <li>
-                                <a dir="rtl" class="dropdown-item" href="pages/word.html"> كلمة مدير عام الشركة </a>
+                                <a dir="rtl" class="dropdown-item" href="pages/word.html" data-lang="ceo_word"> كلمة
+                                    مدير عام الشركة </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pages/visian.html"> رؤيـتـنــا </a>
+                                <a class="dropdown-item" href="pages/visian.html" data-lang="visian"> رؤيـتـنــا </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pages/message.html"> رسالتـنـا </a>
+                                <a class="dropdown-item" href="pages/message.html" data-lang="massesge"> رسالتـنـا </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pages/goals.html"> أهـدافنا </a>
+                                <a class="dropdown-item" href="pages/goals.html" data-lang="goals"> أهـدافنا </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="pages/rate-us.html"> قـيـمنــا </a>
+                                <a class="dropdown-item" href="pages/rate-us.html" data-lang="value"> قـيـمنــا </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown drop">
-                        <a class="nav-link dropdown-toggle p-2 p-lg-3" href="#" 
-                        id="navbarDropdown"
-                        role="button" 
-                        data-bs-toggle="dropdown" 
-                        aria-expanded="false">
+                        <a class="nav-link dropdown-toggle p-2 p-lg-3" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-lang="sevece">
                             خدماتنا
                         </a>
-                        <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">  
+                        <ul class="dropdown-menu down border-1 border-md-0 p-2 p-lg-3" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item pb-2" href="pages/Medical-waste-management.html">إدارة الـمخـلفـات الـطبيـة</a>
+                                <a class="dropdown-item pb-2" href="pages/Medical-waste-management.html"
+                                    data-lang="medical">إدارة الـمخـلفـات الـطبيـة</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="pages/Pharmaceutical-waste-management.html">إدارة المخلفات الصيدلانية</a>
+                                <a class="dropdown-item pb-2" href="pages/Pharmaceutical-waste-management.html"
+                                    data-lang="pharmaceutical">إدارة المخلفات الصيدلانية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="pages/Infection-control-management.html">إدارة مـكـافـحة الــعدوى</a>
+                                <a class="dropdown-item pb-2" href="pages/Infection-control-management.html"
+                                    data-lang="infection">إدارة مـكـافـحة الــعدوى</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="pages/Pest-control-management.html">إدارة مــكـافحـة الآفــات</a>
+                                <a class="dropdown-item pb-2" href="pages/Pest-control-management.html"
+                                    data-lang="pest_control">إدارة مــكـافحـة الآفــات</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="#">إدارة المخلفات النـفـطـية</a>
+                                <a class="dropdown-item pb-2" href="#" data-lang="oil">إدارة المخلفات النـفـطـية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="#">إدارة الـدراسـات الـبـيـئـية</a>
+                                <a class="dropdown-item pb-2" href="#" data-lang="study">إدارة الـدراسـات
+                                    الـبـيـئـية</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="pages/trining.html">إدارة الـتدريــب والـتطويــر</a>
+                                <a class="dropdown-item pb-2" href="pages/trining.html" data-lang="trining">إدارة
+                                    الـتدريــب والـتطويــر</a>
                             </li>
                             <li>
-                                <a class="dropdown-item pb-2" href="pages/Hygiene-and-coffee.html">إدارة النظافة العامة والضيافة</a>
+                                <a class="dropdown-item pb-2" href="pages/Hygiene-and-coffee.html"
+                                    data-lang="cleaning">إدارة النظافة العامة والضيافة</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="pages/news.html">أخبار ونشاطات </a>
+                        <a class="nav-link p-2 p-lg-3 how" href="pages/news.html" data-lang="news">أخبار ونشاطات </a>
                     </li>
                     <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="pages/Contract-Request.html">تعاقد معنا </a>
+                        <a class="nav-link p-2 p-lg-3 how" href="pages/Contract-Request.html" data-lang="contract">تعاقد
+                            معنا </a>
                     </li>
                     <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="pages/jop-application.html">وظائف</a>
+                        <a class="nav-link p-2 p-lg-3 how" href="pages/jop-application.html" data-lang="jops">وظائف</a>
                     </li>
                     <li>
-                        <a class="nav-link p-2 p-lg-3 how" href="pages/contact.html">أتصل بنا </a>
+                        <a class="nav-link p-2 p-lg-3 how" href="pages/contact.html" data-lang="call_us">أتصل بنا </a>
                     </li>
                 </ul>
             </div>
@@ -132,44 +134,70 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                 aria-label="Slide 4"></button>
+                
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active content">
                 <div class="image">
-                <img src="media/NEWS/meeting.jpg" class="d-block w-100" alt="...">
+                    <img src="media/NEWS/math.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-caption text   h-50">
-                    <h5 class="fs-6 fs-md-1 fw-bold">اليوم العالمي للبيئة</h5>
-                    <p class="lh-lg d-none  d-md-block">  تتعاون شركة مرسيليا مع المنظمات البيئية والمؤسسات ذات الصّلة لتنظيم فعاليات خاصة بمناسبة اليوم العالمي للبيئة، حيث يتم تخصيص موارد مالية وبشرية للمشاركة في مبادرات تنظيف الشواطئ والحدائق والغابات، وتنظيم حملات لزراعة الأشجار وتجديد المساحات الخضراء.  </p>
+                    <h5 class="fs-6 fs-md-1 fw-bold" data-lang="slide_h1">أول  مطمر صحي ( خلية دفن آمنة) في ليبيا</h5>
+                    <p class="lh-lg d-none  d-md-block" data-lang="slide_p1"> نعلن بفخر عن بدء عمليات التخلص النهائي للمخلفات الخطرة في أول
+                        مطمر صحي (خلية دفن آمن) في ليبيا.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item  content">
+                <div class="image">
+                    <img src="media/NEWS/meeting.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption text   h-50">
+                    <h5 class="fs-6 fs-md-1 fw-bold" data-lang="slide_h2">اليوم العالمي للبيئة</h5>
+                    <p class="lh-lg d-none  d-md-block" data-lang="slide_p2"> تتعاون شركة مرسيليا مع المنظمات البيئية والمؤسسات ذات الصّلة
+                        لتنظيم فعاليات خاصة بمناسبة اليوم العالمي للبيئة، حيث يتم تخصيص موارد مالية وبشرية للمشاركة في
+                        مبادرات تنظيف الشواطئ والحدائق والغابات، وتنظيم حملات لزراعة الأشجار وتجديد المساحات الخضراء.
+                    </p>
                 </div>
             </div>
             <div class="carousel-item content">
                 <div class="image">
-                <img src="media/NEWS/buril.jpg" class="d-block w-100" alt="...">
+                    <img src="media/NEWS/buril.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-caption text   h-50">
-                    <h5 class="fs-6 fs-md-1 fw-bold">عمليات تخلص امنه وصديقة للبيئة : مرسيليا تساهم عمليات التخلص من المخلفات الصيدلانية والغذائية الغير مطابقة للمواصفات</h5>
-                    <p class="lh-lg d-none  d-md-block"> بعد توقف طويل دام لسنوات، بدأت مرسيليا للنظافة و حماية البيئة عمليات التخلص النهائي من المخلفات الصيدلانية والغذائية الغير مطابقة للمواصفات والمعايير الليبية بميناء طرابلس. حيث يتم تنفيذ هذه العمليات بواسطة آليات إعدام متطورة صديقة للبيئة وطرق اتلاف صحية وبأعلى معايير الجودة والأمان. وذلك بالتعاون المشترك مع وزارة البيئة ومصلحة الجمارك الليبية. </p>
+                    <h5 class="fs-6 fs-md-1 fw-bold" data-lang="slide_h3">عمليات تخلص امنه وصديقة للبيئة : مرسيليا تساهم عمليات التخلص من
+                        المخلفات الصيدلانية والغذائية الغير مطابقة للمواصفات</h5>
+                    <p class="lh-lg d-none  d-md-block" data-lang="slide_p3"> بعد توقف طويل دام لسنوات، بدأت مرسيليا للنظافة و حماية البيئة
+                        عمليات التخلص النهائي من المخلفات الصيدلانية والغذائية الغير مطابقة للمواصفات والمعايير الليبية
+                        بميناء طرابلس. حيث يتم تنفيذ هذه العمليات بواسطة آليات إعدام متطورة صديقة للبيئة وطرق اتلاف صحية
+                        وبأعلى معايير الجودة والأمان. وذلك بالتعاون المشترك مع وزارة البيئة ومصلحة الجمارك الليبية. </p>
                 </div>
             </div>
             <div class="carousel-item content">
                 <div class="image">
-                <img src="media/NEWS/harbor1.jpg" class="d-block w-100" alt="...">
+                    <img src="media/NEWS/harbor1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-caption text   h-50">
-                    <h5 class="fs-6 fs-md-1 fw-bold">حلول بيئية مبتكرة: إنشاء خلية دفن آمنة لإدارة المخلفات الطبية</h5>
-                    <p class="lh-lg d-none  d-md-block"> تفخر شركة مرسيليا بتقديم حلول بيئية متكاملة وشمولية في مجال النظافة وحماية البيئة، كما تهدف الشركة إلى أن تلعب دورًا محوريًا في مسيرة التطور ورفع مستوى جودة الحياة في بلادنا الحبيبة. ولهذا الغرض، قمنا بإنشاء أول خلية دفن آمن (مطمر صحي) لإدارة المخلفات على مستوى ليبيا. </p>
+                    <h5 class="fs-6 fs-md-1 fw-bold" data-lang="slide_h4">حلول بيئية مبتكرة: إنشاء خلية دفن آمنة لإدارة المخلفات الطبية</h5>
+                    <p class="lh-lg d-none  d-md-block" data-lang="slide_p4"> تفخر شركة مرسيليا بتقديم حلول بيئية متكاملة وشمولية في مجال
+                        النظافة وحماية البيئة، كما تهدف الشركة إلى أن تلعب دورًا محوريًا في مسيرة التطور ورفع مستوى جودة
+                        الحياة في بلادنا الحبيبة. ولهذا الغرض، قمنا بإنشاء أول خلية دفن آمن (مطمر صحي) لإدارة المخلفات
+                        على مستوى ليبيا. </p>
                 </div>
             </div>
             <div class="carousel-item content">
                 <div class="image">
-                <img src="media/NEWS/darna.jpg" class="d-block w-100" alt="...">
+                    <img src="media/NEWS/darna.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-caption text   h-50">
-                    <h5 class="fs-6 fs-md-1 fw-bold">  مدينة درنة : ملتزمون بمساعدة مجتمعنا على التغلب على الصعوبات  </h5>
-                    <p class="lh-lg d-none  d-md-block">  قامت شركة مرسيليا للنظافة وحماية البيئة وبالتعاون مع المركز الوطني لإدارة الأزمات، وفي إطار الجهود الوطنية الرامية إلى التصدي للتحديات الناجمة عن تأثير الإعصار الذي ألم بمدينة درنة والمدن المجاورة لها، وذلك بتنفيذ دور بارز في عملية التعقيم ومكافحة الآفات بالمدينة. تمت هذه الخطوة الهامة بهدف الحد من الآثار السلبية للإعصار وتأكيد التزامنا الوطني في هذه الفترة الصعبة.  </p>
+                    <h5 class="fs-6 fs-md-1 fw-bold" data-lang="slide_h5"> مدينة درنة : ملتزمون بمساعدة مجتمعنا على التغلب على الصعوبات </h5>
+                    <p class="lh-lg d-none  d-md-block" data-lang="slide_p5"> قامت شركة مرسيليا للنظافة وحماية البيئة وبالتعاون مع المركز
+                        الوطني لإدارة الأزمات، وفي إطار الجهود الوطنية الرامية إلى التصدي للتحديات الناجمة عن تأثير
+                        الإعصار الذي ألم بمدينة درنة والمدن المجاورة لها، وذلك بتنفيذ دور بارز في عملية التعقيم ومكافحة
+                        الآفات بالمدينة. تمت هذه الخطوة الهامة بهدف الحد من الآثار السلبية للإعصار وتأكيد التزامنا
+                        الوطني في هذه الفترة الصعبة. </p>
                 </div>
             </div>
         </div>
@@ -208,8 +236,8 @@
                 <div class="box">
                     <img decoding="async" src="media/iso/1.jpg" alt="" />
                     <div class="text">
-                        <h3> شهادة ISO 45001:2018 </h3>
-                        <p>
+                        <h3 data-lang="work_h1"> شهادة ISO 45001:2018 </h3>
+                        <p data-lang="work_p1">
                             تُعد شهادة ISO 45001:2018 شهادة دولية لنظام إدارة الصحة والسلامة المهنية. تهدف هذه الشهادة
                             إلى ضمان بيئة عمل آمنة وصحية للعاملين في الشركة وتحسين أداءها في مجال السلامة والحماية
                             العامة.تساهم هذه الشهادة في تحسين أداء الشركة البيئي وتعزز سمعتها في مجال الحفاظ على البيئة
@@ -220,8 +248,8 @@
                 <div class="box">
                     <img decoding="async" src="media/iso/2.jpg" alt="" />
                     <div class="text">
-                        <h3> شهادة ISO 14001:2015 </h3>
-                        <p>
+                        <h3 data-lang="work_h2"> شهادة ISO 14001:2015 </h3>
+                        <p data-lang="work_p2">
                             تُعد شهادة ISO 14001:2015 شهادة دولية تتعلق بإدارة البيئة. وهي تُثبت التزام الشركة بتحقيق
                             الاستدامة البيئية والحد من التأثير البيئي السلبي لعملياتها وأنشطتها. </p>
                     </div>
@@ -229,8 +257,8 @@
                 <div class="box">
                     <img decoding="async" src="media/iso/3.jpg" alt="" />
                     <div class="text">
-                        <h3> شهادة ISO 9001:2015 </h3>
-                        <p>
+                        <h3 data-lang="work_h3"> شهادة ISO 9001:2015 </h3>
+                        <p data-lang="work_p3">
                             تُعد شهادة ISO 9001:2015 شهادة دولية تتعلق بنظام إدارة الجودة. تؤكد هذه الشهادة التزام
                             الشركة بتقديم خدمات عالية الجودة وتلبية متطلبات العملاء بشكل مستمر. وتعكس الشهادة التزام
                             الشركة بالتحسين المستمر والاستمرارية في تقديم أفضل الخدمات لعملائها.
@@ -250,10 +278,10 @@
             <div class="content">
 
                 <div class="text">
-                    <h5>
+                    <h5 data-lang="blurb_h1">
                         هل خزانة الأدوية الخاصة بك مليئة بالأدوية منتهية الصلاحية أو الأدوية التي لم تعد تستخدمها؟
                     </h5>
-                    <p>
+                    <p data-lang="blurb_p1">
                         أفضل طريقة للتخلص من الأدوية منتهية الصلاحية أو غير المرغوب فيها أو غير المستخدمة هي عن طريق
                         الاتصال بنا ، وملء استمارة الأدوية منتهية الصلاحية … أو الاتصال بالشركة للاستفسار ، أو الطلب من
                         أحد ممثلي العلاقات للتواصل.
@@ -269,10 +297,11 @@
     <div class="footer">
         <div class="container">
             <div class="box">
-                <h3>شركة مرسيـليـا لـلنظافـة وحماية البيئة</h3>
+                <h3 data-lang="com_name">شركة مرسيـليـا لـلنظافـة وحماية البيئة</h3>
                 <ul class="social">
                     <li>
-                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR" class="facebook">
+                        <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR"
+                            class="facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
@@ -287,27 +316,28 @@
                         </a>
                     </li>
                 </ul>
-                <p class="text">
-                    تعتبر شركة مرسيليا من أبرز الشركات في مجال النظافة وحماية البيئة في ليبيا. تأسست الشركة برؤية طموحة لتحقيق التميز في مجال خدمات النظافة و حماية البيئة
+                <p class="text" data-lang="footer_bout">
+                    تعتبر شركة مرسيليا من أبرز الشركات في مجال النظافة وحماية البيئة في ليبيا. تأسست الشركة برؤية طموحة
+                    لتحقيق التميز في مجال خدمات النظافة و حماية البيئة
                 </p>
             </div>
             <div class="box">
                 <ul class="links">
-                    <li><a href="pages/now-user.html">تعاقد معنا</a></li>
-                    <li><a href="pages/login.html">وظائف</a></li>
-                    <li><a href="pages/about.html">من نحن</a></li>
-                    <li><a href="pages/news.html">أخبار ونشاطات</a></li>
-                    <li><a href="pages/contact.html"> أتصل بنا </a></li>
+                    <li><a href="pages/now-user.html" data-lang="contract">تعاقد معنا</a></li>
+                    <li><a href="pages/login.html" data-lang="jops">وظائف</a></li>
+                    <li><a href="pages/about.html" data-lang="about">من نحن</a></li>
+                    <li><a href="pages/news.html" data-lang="news">أخبار ونشاطات</a></li>
+                    <li><a href="pages/contact.html" data-lang="call_us"> أتصل بنا </a></li>
                 </ul>
             </div>
             <div class="box">
                 <div class="line">
                     <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <div class="info"> حي الأندلس , طرابس , ليبيا </div>
+                    <div class="info" data-lang="loction"> حي الأندلس , طرابس , ليبيا </div>
                 </div>
                 <div class="line">
                     <i class="far fa-clock fa-fw"></i>
-                    <div class="info">ساعات العمل من الساعة 8 صباحا الي 4 مساءً </div>
+                    <div class="info" data-lang="time_work">ساعات العمل من الساعة 8 صباحا الي 4 مساءً </div>
                 </div>
                 <div class="line">
                     <i class="fas fa-phone-volume fa-fw"></i>
@@ -324,7 +354,7 @@
                 <img decoding="async" src="media/management/4.jpg" alt="" />
             </div>
         </div>
-        <p class="copyright"> &copy; جميع الحقوق محفوظة 2023. شركة مرسيـليـا لـلنظافـة وحماية البيئة ذ م م. </p>
+        <p class="copyright" data-lang="allg">  جميع الحقوق محفوظة 2024&copy;. شركة مرسيـليـا لـلنظافـة وحماية البيئة ذم م. </p>
     </div>
     <!-- End Footer -->
     <script src="js.js"></script>
@@ -332,5 +362,4 @@
     <script src="js/bootstrap.bundle.min.js.map"></script>
     <!-- <script src="js/all.min.js"></script> -->
 </body>
-
 </html>

@@ -21,11 +21,11 @@ axios.get('https://api.showmore.ly/services')
 
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
-    let captcharesponse = grecaptcha.getResponse();
-    console.log(captcharesponse);
-    if (captcharesponse.length <= 0) {
-        throw new Error('Erorr');
-    }
+    // let captcharesponse = grecaptcha.getResponse();
+    // console.log(captcharesponse);
+    // if (captcharesponse.length <= 0) {
+    //     throw new Error('Erorr');
+    // }
     let data = {
         email: document.getElementById('email').value,
         service_id: document.getElementById('service_id').value,

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
     <!-- Awesome libriry -->
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- normalize file  -->
-         <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <!-- cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- google font cairo -->
@@ -40,10 +41,11 @@
     <!-- start head page header -->
     <div class="head-page">
         <div class="container">
-            <h2> تعاقد معنا</h2>
+            <h2 data-lang="contract_head_h2"> تعاقد معنا</h2>
             <div class="text">
-                <a href="../index.html"> الرئيسية </a>
-                <p>تعاقد معنا</p>
+                <a href="../index.html" data-lang="contract_head_a"> الرئيسية </a>
+                <span class="dvider"></span>
+                <p data-lang="contract_head_p">تعاقد معنا</p>
             </div>
         </div>
     </div>
@@ -52,70 +54,69 @@
     <div class="form">
         <div class="container">
             <form>
-                <div class="sec" >
+                <div class="sec">
                     <div>
-                        <label for="service_id"> نوع الخدمة المرغوبة</label>
+                        <label for="service_id" data-lang="contract_form_1"> نوع الخدمة المرغوبة</label>
                         <select name="service_id" id="service_id" required>
                         </select>
                     </div>
                     <div>
-                        <label for="contract_duration_in_years"> فترة التعاقد </label>
+                        <label for="contract_duration_in_years" data-lang="contract_form_2"> فترة التعاقد </label>
                         <select name="contract_duration_in_years" id="contract_duration_in_years" required>
-                            <option value="1"> سنه </option>
-                            <option value="2"> سنتين </option>
-                            <option value="3"> ثلاثة سنين </option>
-                            <option value="4"> خمسة سنين </option>
+                            <option value="1" data-lang="contract_form_3"> سنه </option>
+                            <option value="2" data-lang="contract_form_4"> سنتين </option>
+                            <option value="3" data-lang="contract_form_5"> ثلاثة سنين </option>
+                            <option value="4" data-lang="contract_form_6"> خمسة سنين </option>
                         </select>
                     </div>
                     <div>
-                        <label for="company_name"> أسم الجهة كاملا</label>
-                        <input type="text" id="company_name" name="company_name" maxlength="55" required>
+                        <label for="company_name" data-lang="contract_form_7"> أسم الجهة كاملا</label>
+                        <input type="text" id="company_name" name="company_name"  required>
                     </div>
                     <div>
-                        <label for="company_commercial_name"> أسم الجهة التجاري </label>
-                        <input type="text" id="company_commercial_name" name="company_commercial_name" maxlength="55"
-                            required>
+                        <label for="company_commercial_name" data-lang="contract_form_8"> أسم الجهة التجاري </label>
+                        <input type="text" id="company_commercial_name" name="company_commercial_name"
+                            >
                     </div>
                     <div>
-                        <label for="company_address"> عنوان الجهة </label>
-                        <input type="text" id="company_address" name="company_address" maxlength="85" required>
+                        <label for="company_address" data-lang="contract_form_9"> عنوان الجهة </label>
+                        <input type="text" id="company_address" name="company_address"  required>
                     </div>
                     <div>
-                        <label for="email"> البريد الاكتروني </label>
+                        <label for="email" data-lang="contract_form_10"> البريد الاكتروني </label>
                         <input type="email" id="email" name="email" placeholder=" example@gmail.com" required>
                     </div>
                 </div>
                 <div class="sec">
                     <div>
-                        <label for="representative_name"> المخول بالتوقيع </label>
-                        <input type="text" id="representative_name" name="representative_name" maxlength="35" required>
+                        <label for="representative_name" data-lang="contract_form_11"> المخول بالتوقيع </label>
+                        <input type="text" id="representative_name" name="representative_name"  required>
                     </div>
                     <div>
-                        <label for="representative_details"> صفة المخول بالتوقيع </label>
-                        <input type="text" id="representative_details" name="representative_details" maxlength="25"
-                            minlength="10" required>
+                        <label for="representative_details" data-lang="contract_form_12"> صفة المخول بالتوقيع </label>
+                        <input type="text" id="representative_details" name="representative_details" 
+                            required>
                     </div>
                     <div>
-                        <label for="phone_number"> رقم الهاتف </label>
-                        <input dir="rtl" type="tel" id="phone_number" name="phone_number" placeholder=" 218910000000" maxlength="12"
-                            minlength="12" required>
+                        <label for="phone_number" data-lang="contract_form_13"> رقم الهاتف </label>
+                        <input dir="rtl" type="tel" id="phone_number" name="phone_number" placeholder="218910000000"
+                        required>
                     </div>
                     <div>
-                        <label for="commercial_registeration_number"> رقم السجل التجاري </label>
+                        <label for="commercial_registeration_number" data-lang="contract_form_14"> رقم السجل التجاري </label>
                         <input type="text" id="commercial_registeration_number" name="commercial_registeration_number"
-                            maxlength="25" required>
+                        >
                     </div>
                     <div>
-                        <label for="commercial_license_number"> رقم الترخيص التجاري </label>
-                        <input type="text" id="commercial_license_number" name="commercial_license_number"
-                            maxlength="25" required>
+                        <label for="commercial_license_number" data-lang="contract_form_15"> رقم الترخيص التجاري </label>
+                        <input type="text" id="commercial_license_number" name="commercial_license_number">
                     </div>
-                        <div>
-                            <div class="g-recaptcha" data-sitekey="6LenAFcpAAAAAOIPpyFV5rzG75nixtRNv3xdZKM9">
-                            </div>
+                    <div>
+                        <div class="g-recaptcha" data-sitekey="6LenAFcpAAAAAOIPpyFV5rzG75nixtRNv3xdZKM9">
                         </div>
                     </div>
-                    <button class="button btn" type="submit">أرسال</button>
+                </div>
+                <button class="button btn" type="submit" data-lang="contract_form_16">أرسال</button>
             </form>
         </div>
         <div id="data-container"></div>

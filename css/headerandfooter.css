@@ -329,9 +329,13 @@ ul {
     text-decoration: none;
     color: #a2a2a2;
     padding-left: 10px;
-    border-left: 1px black solid;
 }
-
+.head-page .container .text .dvider{
+    width: 2px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: #969696;
+}
 .head-page .container .text p {
     padding-right: 10px;
 }

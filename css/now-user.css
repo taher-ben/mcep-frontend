@@ -8,64 +8,6 @@
 }
 
 /* End Variables */
-/* start head-page */
-.head-page {
-    height: 25vh;
-    overflow: hidden;
-    position: relative;
-}
-.head-page img{
-    opacity: 0.1;
-    z-index: -99;
-}
-.head-page img::before{
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-}
-.head-page .container{
-    z-index: 9999;
-}
-@media (max-width:992px) {
-    .head-page .container h2{
-        font-size: 35px !important;
-    }
-    .head-page .container .text{
-        font-size:10px ;
-    }
-}
-.head-page .container h2 {
-    font-size: 40px;
-    font-weight: bolder;
-    color: var(--main-color);
-    position: absolute;
-    top: 30%;
-    opacity: 1;
-}
-.head-page .container .text {
-    font-size: 18px;
-    display: flex;
-    color: var(--main-color);
-    position: absolute;
-    text-decoration: none;
-    color: #000;
-    top: 55%;
-}
-.head-page .container .text a{
-    text-decoration: none;
-    color: #a2a2a2;
-    padding-left: 10px;
-    border-left: 1px black solid;
-}
-.head-page .container .text p{
-    padding-right: 10px;
-
-}
-/* end head-page */
 /* start form */
 .form {
     position: relative;

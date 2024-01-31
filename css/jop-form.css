@@ -406,3 +406,9 @@ nav .profile-details i {
         flex-direction: column;
     }
 }
+/* filter button  */
+.home-content #services{
+    padding: 10px  0 10px 30px;
+    border-radius: 10px;
+    border-color: var(--main-color);
+}

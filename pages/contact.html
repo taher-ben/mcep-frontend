@@ -20,7 +20,7 @@
     <!-- Awesome libriry -->
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- normalize file  -->
-         <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <!-- cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- google font cairo -->
@@ -34,7 +34,7 @@
     <!-- sweetalrt -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    
+
 
 </head>
 
@@ -45,23 +45,24 @@
     <!-- start head page header -->
     <div class="head-page">
         <div class="container">
-            <h2> أتصل بنا </h2>
+            <h2 data-lang="contact_head_h2"> أتصل بنا </h2>
             <div class="text">
-                <a href="../index.html"> الرئيسية </a>
-                <p> أتصل بنا </p>
+                <a href="../index.html" data-lang="contact_head_a"> الرئيسية </a>
+                <span class="dvider"></span>
+                <p data-lang="contact_head_p"> أتصل بنا </p>
             </div>
         </div>
     </div>
     <!-- end head page header -->
     <!-- start loicton -->
-    <div class="loicton">
+    <div class="loicton" >
         <div class="container">
             <div class="map">
-                <p class="call"> أتصل بنا </p>
+                <p class="call" data-lang="loicton_call_p"> أتصل بنا </p>
                 <div class="phone-and-email">
                     <div class="text">
-                        <p> البريد الإلكتروني </p>
-                        <p> info@marsellia.com </p>
+                        <p data-lang="loicton_call_p1"> البريد الإلكتروني </p>
+                        <p data-lang="loicton_call_p2"> info@marsellia.com </p>
                     </div>
                 </div>
                 <iframe
@@ -71,8 +72,8 @@
             </div>
             <div class="form">
                 <div class="text">
-                    <h4> لديك استفسار؟ </h4>
-                    <p>اترك رسالة باستفسارك وسنقوم بالرد عليك في اقرب وقت </p>
+                    <h4 data-lang="loicton_form_h4"> لديك استفسار؟ </h4>
+                    <p data-lang="loicton_form_p">اترك رسالة باستفسارك وسنقوم بالرد عليك في اقرب وقت </p>
                     <div class="icon">
                         <a href="https://www.facebook.com/Marsellia.Co.For.Cleanliness.and.Environmental/?locale=ar_AR">
                             <i class="fa-brands fa-facebook"></i>
@@ -83,19 +84,19 @@
                 <form>
                     <div class="main-form">
                         <div>
-                            <label for="fullname"> الأسم </label>
+                            <label for="fullname" data-lang="contact_name"> الأسم </label>
                             <input type="text" name="fullname" id="full_name" required>
                         </div>
                         <div>
-                            <label for="email"> البريد الالكتروني </label>
+                            <label for="email" data-lang="contact_email"> البريد الالكتروني </label>
                             <input type="email" name="email" id="email" required>
                         </div>
                         <div>
-                            <label for="message"> الرسالة </label>
+                            <label for="message" data-lang="contact_message"> الرسالة </label>
                             <textarea class="text" name="message" id="message" cols="30" rows="5" required></textarea>
                         </div>
                         <span class="sub pt-4 row">
-                            <button class="button btn pt-3" type="submit">أرسال</button>
+                            <button class="button btn pt-3" type="submit" data-lang="send">أرسال</button>
                             <div class="cap pt-2">
                                 <div class="g-recaptcha" data-sitekey="6LenAFcpAAAAAOIPpyFV5rzG75nixtRNv3xdZKM9">
                                 </div>
