@@ -31,7 +31,7 @@ axios.get(`https://api.showmore.ly/education`)
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    // Validate reCAPTCHA
+    // // Validate reCAPTCHA
     let captcharesponse = grecaptcha.getResponse();
     if (captcharesponse.length <= 0) {
         throw new Error('Erorr');
